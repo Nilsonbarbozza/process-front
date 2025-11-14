@@ -1,0 +1,29 @@
+# HTML Processor v2.0 - Dependências
+
+# Core HTML/XML Processing
+beautifulsoup4>=4.12.0
+lxml>=5.0.0
+
+# HTTP Requests
+requests>=2.31.0
+
+# CSS Processing
+cssutils>=2.9.0
+
+# Content Extraction (Inteligente)
+trafilatura>=1.6.0
+readability-lxml>=0.8.0
+
+# File Type Detection
+python-magic>=0.4.27
+python-magic-bin>=0.4.14; sys_platform == 'win32'
+
+# Environment Variables
+python-dotenv>=1.0.0
+
+# Testing (opcional, mas recomendado)
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Utilities
+chardet>=5.0.0

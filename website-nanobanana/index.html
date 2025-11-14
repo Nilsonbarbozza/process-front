@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html class="light inline_bac870f3" lang="pt">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Nano Banana API: Affordable Gemini 2.5 Flash Image Preview Integration on Kie.ai
+  </title>
+  <meta content="width=device-width" name="viewport"/>
+  <meta content="Integrate the Nano Banana API, powered by Gemini 2.5 Flash Image Preview, for fast, precise AI image editing and generation. Kie.ai offers a affordable Gemini 2.5 Flash Image API price and easy Nano Banana API access for developers." name="description"/>
+  <link href="styles/styles.css" rel="stylesheet"/>
+  <link rel="icon" href="/favicon.ico"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+ </head>
+ <body class="min-h-screen bg-background text-foreground antialiased enable-motion underline-links">
+  <link href="https://kie.ai/nano-banana" rel="canonical"/>
+  <link href="https://kie.ai/nano-banana" hreflang="en" rel="alternate"/>
+  <link href="https://kie.ai/es/nano-banana" hreflang="es" rel="alternate"/>
+  <link href="https://kie.ai/fr/nano-banana" hreflang="fr" rel="alternate"/>
+  <link href="https://kie.ai/de/nano-banana" hreflang="de" rel="alternate"/>
+  <link href="https://kie.ai/ru/nano-banana" hreflang="ru" rel="alternate"/>
+  <link href="https://kie.ai/zh-CN/nano-banana" hreflang="zh-CN" rel="alternate"/>
+  <iframe class="inline_7d93f2e3" height="0" width="0">
+  </iframe>
+  <div id="__next">
+   <div data-overlay-container="true">
+    <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
+     <header class="fixed left-0 top-0 z-40 w-full inline_9703d2e0">
+      <nav class="flex z-40 h-auto items-center justify-center data-[menu-open=true]:border-none sticky top-0 inset-x-0 data-[menu-open=true]:backdrop-blur-xl backdrop-saturate-150 w-full bg-default-50 backdrop-blur-md inline_f2fa09a1">
+       <header class="z-40 flex gap-4 w-full flex-row relative flex-nowrap items-center justify-between h-[var(--navbar-height)] px-4 sm:px-6 py-10 max-w-full inline_9703d2e0">
+        <ul class="flex-row flex-nowrap items-center data-[justify=start]:justify-start data-[justify=start]:flex-grow data-[justify=start]:basis-0 data-[justify=center]:justify-center data-[justify=end]:justify-end data-[justify=end]:flex-grow data-[justify=end]:basis-0 ml-4 hidden h-12 w-full max-w-fit gap-6 rounded-full bg-content2 px-4 text-sm dark:bg-content1 sm:flex inline_9703d2e0" data-justify="start">
+         <div class="hidden items-center gap-3 lg:flex inline_9703d2e0">
+          <section class="relative inline-block text-left inline_9703d2e0" data-headlessui-state="">
+           <div class="inline-flex items-start inline_9703d2e0">
+            <button aria-expanded="false" aria-haspopup="menu" class="group inline-flex w-full items-center justify-center w-max flex gap-2 text-[15px] text-default-700 text-inherit transition duration-500 hover:opacity-80 inline_9703d2e0" data-headlessui-state="" id="headlessui-menu-button-:rc:" type="button">
+             <svg aria-hidden="true" class="lucide lucide-chevron-down ml-1 h-4 w-4 transition duration-500" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="m6 9 6 6 6-6">
+              </path>
+             </svg>
+            </button>
+           </div>
+          </section>
+          <section class="relative inline-block text-left inline_9703d2e0" data-headlessui-state="">
+           <div class="inline-flex items-start inline_9703d2e0">
+            <button aria-expanded="false" aria-haspopup="menu" class="group inline-flex w-full items-center justify-center w-max flex gap-2 text-[15px] text-default-700 text-inherit transition duration-500 hover:opacity-80 inline_9703d2e0" data-headlessui-state="" id="headlessui-menu-button-:rd:" type="button">
+             <svg aria-hidden="true" class="lucide lucide-chevron-down ml-1 h-4 w-4 transition duration-500" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="m6 9 6 6 6-6">
+              </path>
+             </svg>
+            </button>
+           </div>
+          </section>
+          <section class="relative inline-block text-left inline_9703d2e0" data-headlessui-state="">
+           <div class="inline-flex items-start inline_9703d2e0">
+            <button aria-expanded="false" aria-haspopup="menu" class="group inline-flex w-full items-center justify-center w-max flex gap-2 text-[15px] text-default-700 text-inherit transition duration-500 hover:opacity-80 inline_9703d2e0" data-headlessui-state="" id="headlessui-menu-button-:re:" type="button">
+             <svg aria-hidden="true" class="lucide lucide-chevron-down ml-1 h-4 w-4 transition duration-500" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="m6 9 6 6 6-6">
+              </path>
+             </svg>
+            </button>
+           </div>
+          </section>
+         </div>
+        </ul>
+        <ul class="flex-row flex-nowrap data-[justify=start]:justify-start data-[justify=start]:flex-grow data-[justify=start]:basis-0 data-[justify=center]:justify-center data-[justify=end]:justify-end data-[justify=end]:flex-grow data-[justify=end]:basis-0 ml-auto flex h-12 max-w-fit items-center gap-2 rounded-full p-0 md:gap-0 lg:bg-content2 lg:px-1 lg:dark:bg-content1 inline_9703d2e0" data-justify="end">
+         <li class="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold data-[active=true]:text-primary inline-flex inline_9703d2e0">
+          <button class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-small gap-2 rounded-full px-0 !gap-0 transition-transform-colors-opacity motion-reduce:transition-none bg-transparent text-default-foreground data-[hover=true]:bg-default/40 min-w-10 w-10 h-10 inline_9703d2e0" type="button">
+           <svg aria-hidden="true" class="iconify iconify--solar text-default-500" height="24" role="img" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g fill="none" stroke="currentColor" stroke-width="1.5">
+             <circle cx="12" cy="12" r="6">
+             </circle>
+             <path d="M12 2v1m0 18v1m10-10h-1M3 12H2m17.07-7.07l-.392.393M5.322 18.678l-.393.393m14.141-.001l-.392-.393M5.322 5.322l-.393-.393" stroke-linecap="round">
+             </path>
+            </g>
+           </svg>
+          </button>
+         </li>
+         <li class="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold data-[active=true]:text-primary inline-flex inline_9703d2e0">
+          <nav class="relative inline_9703d2e0" id="lang-menu-container">
+           <button class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-small gap-2 rounded-full px-0 !gap-0 transition-transform-colors-opacity motion-reduce:transition-none bg-transparent text-default-foreground data-[hover=true]:bg-default/40 min-w-10 w-10 h-10 inline_9703d2e0" type="button">
+            <svg aria-hidden="true" class="iconify iconify--material-symbols text-default-500" height="24" role="img" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+             <path d="m11.9 22l4.55-12h2.1l4.55 12H21l-1.075-3.05h-4.85L14 22zM4 19l-1.4-1.4l5.05-5.05q-.875-.875-1.588-2T4.75 8h2.1q.5.975 1 1.7t1.2 1.45q.825-.825 1.713-2.313T12.1 6H1V4h7V2h2v2h7v2h-2.9q-.525 1.8-1.575 3.7t-2.075 2.9l2.4 2.45l-.75 2.05l-3.05-3.125zm11.7-1.8h3.6l-1.8-5.1z" fill="currentColor">
+             </path>
+            </svg>
+           </button>
+          </nav>
+         </li>
+        </ul>
+       </header>
+      </nav>
+     </header>
+     <div class="mt-20 w-full border-b border-gray-200 bg-white pb-4 dark:border-gray-700 dark:bg-gray-800 inline_9703d2e0">
+      <div class="mx-auto flex max-w-7xl flex-col items-start gap-4 px-6 pb-4 pt-14 lg:px-8 inline_9703d2e0">
+       <div class="flex w-full flex-col items-start justify-between md:flex-row inline_9703d2e0">
+        <div class="min-w-0 flex-1 inline_9703d2e0">
+         <div class="mb-4 flex w-full items-start space-x-3 md:items-center inline_9703d2e0">
+          <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-600 md:h-12 md:w-12 inline_9703d2e0">
+           <svg class="lucide lucide-sparkles h-6 w-6 text-white" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z">
+            </path>
+            <path d="M20 3v4">
+            </path>
+            <path d="M22 5h-4">
+            </path>
+            <path d="M4 17v2">
+            </path>
+            <path d="M5 18H3">
+            </path>
+           </svg>
+          </div>
+          <div class="min-w-0 flex-1 inline_9703d2e0">
+           <div class="mb-2 flex items-center space-x-2 inline_9703d2e0">
+            <button class="flex items-center justify-center rounded-lg p-2 text-gray-500 transition-all hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-200 inline_9703d2e0" title="copy title">
+             <svg class="lucide lucide-copy h-5 w-5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <rect height="14" rx="2" ry="2" width="14" x="8" y="8">
+              </rect>
+              <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2">
+              </path>
+             </svg>
+            </button>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="ml-12 flex min-w-[200px] flex-col items-end space-y-3 md:ml-8 inline_9703d2e0">
+         <button class="flex min-w-[165px] items-center rounded-lg bg-blue-600 px-6 py-2.5 text-sm font-medium text-white shadow-sm transition-all hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 inline_9703d2e0">
+          <svg class="lucide lucide-zap mr-2 h-4 w-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+           <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
+           </path>
+          </svg>
+          Run with API
+         </button>
+         <div class="flex min-w-[165px] items-center rounded-lg border border-gray-300 bg-white shadow-sm dark:border-gray-600 dark:bg-gray-800 inline_9703d2e0">
+          <button class="flex items-center rounded-bl-lg rounded-tl-lg px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 focus:outline-none disabled:cursor-not-allowed dark:text-gray-300 dark:hover:rounded-bl-lg dark:hover:rounded-tl-lg dark:hover:bg-gray-600 inline_9703d2e0">
+           <svg aria-hidden="true" class="iconify iconify--solar mr-2 h-4 w-4" height="1em" role="img" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path d="M15.24 2h-3.894c-1.764 0-3.162 0-4.255.148c-1.126.152-2.037.472-2.755 1.193c-.719.721-1.038 1.636-1.189 2.766C3 7.205 3 8.608 3 10.379v5.838c0 1.508.92 2.8 2.227 3.342c-.067-.91-.067-2.185-.067-3.247v-5.01c0-1.281 0-2.386.118-3.27c.127-.948.413-1.856 1.147-2.593s1.639-1.024 2.583-1.152c.88-.118 1.98-.118 3.257-.118h3.07c1.276 0 2.374 0 3.255.118A3.6 3.6 0 0 0 15.24 2" fill="currentColor">
+            </path>
+            <path d="M6.6 11.397c0-2.726 0-4.089.844-4.936c.843-.847 2.2-.847 4.916-.847h2.88c2.715 0 4.073 0 4.917.847S21 8.671 21 11.397v4.82c0 2.726 0 4.089-.843 4.936c-.844.847-2.202.847-4.917.847h-2.88c-2.715 0-4.073 0-4.916-.847c-.844-.847-.844-2.21-.844-4.936z" fill="currentColor">
+            </path>
+           </svg>
+           Copy page
+          </button>
+          <button aria-expanded="false" aria-haspopup="true" class="z-10 aria-expanded:scale-[0.97] aria-expanded:opacity-70 subpixel-antialiased flex items-center justify-center px-2 py-2 text-gray-700 transition-colors dark:text-gray-300 inline_9703d2e0" data-slot="trigger" id="react-aria2854052035-:r18:" type="button">
+           <svg class="lucide lucide-chevron-down h-4 w-4 transition-transform duration-200 ease-in-out rotate-0" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="m6 9 6 6 6-6">
+            </path>
+           </svg>
+          </button>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="mx-auto max-w-7xl px-6 py-4 lg:px-8 inline_9703d2e0">
+       <div class="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center inline_9703d2e0">
+        <div class="flex flex-wrap gap-2 inline_9703d2e0">
+         <button class="rounded-lg border px-4 py-2 text-sm font-medium transition-all duration-200 cursor-default border-blue-500 bg-blue-500 text-white shadow-md inline_9703d2e0">
+          <div class="flex items-center gap-2 inline_9703d2e0">
+           <svg aria-hidden="true" class="iconify iconify--solar h-4 w-4" height="1em" role="img" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path clip-rule="evenodd" d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2s10 4.477 10 10m-5.97-3.03a.75.75 0 0 1 0 1.06l-5 5a.75.75 0 0 1-1.06 0l-2-2a.75.75 0 1 1 1.06-1.06l1.47 1.47l2.235-2.235L14.97 8.97a.75.75 0 0 1 1.06 0" fill="currentColor" fill-rule="evenodd">
+            </path>
+           </svg>
+          </div>
+         </button>
+        </div>
+       </div>
+       <div class="flex items-start space-x-2 text-sm text-gray-500 dark:text-gray-400 inline_9703d2e0">
+        <svg aria-hidden="true" class="iconify iconify--carbon mt-0.5 h-5 w-5 flex-shrink-0 text-amber-500" height="1em" role="img" size="20" viewbox="0 0 32 32" width="1em" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+         <path d="M16 2v2c6.63 0 12 5.37 12 12s-5.37 12-12 12v2c7.73 0 14-6.27 14-14S23.73 2 16 2M8.24 25.14l-1.29 1.53c1.23 1.04 2.64 1.87 4.18 2.44l.68-1.88c-1.32-.49-2.53-1.2-3.58-2.09zM4.19 18l-1.97.41c.28 1.63.84 3.16 1.64 4.54L5.59 22c-.68-1.18-1.16-2.61-1.4-4m1.4-8L3.86 9c-.79 1.38-1.35 2.96-1.64 4.59l1.97.35c.24-1.39.72-2.75 1.4-3.93zm6.23-5.24l-.68-1.88c-1.54.57-2.95 1.4-4.18 2.44l1.29 1.53c1.05-.89 2.26-1.6 3.58-2.09z" fill="currentColor">
+         </path>
+         <path d="M21 12v-2h-4V7h-2v3h-2c-1.103 0-2 .897-2 2v3c0 1.103.897 2 2 2h6v3h-8v2h4v3h2v-3h2c1.103 0 2-.897 2-2v-3c0-1.103-.897-2-2-2h-6v-3z" fill="currentColor">
+         </path>
+        </svg>
+       </div>
+      </div>
+     </div>
+     <header class="sticky top-20 z-30 border-b border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800 inline_9703d2e0">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8 inline_9703d2e0">
+       <nav aria-label="Tabs" class="flex w-full space-x-8 overflow-x-auto inline_9703d2e0">
+        <button class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:text-gray-400 dark:hover:border-gray-600 dark:hover:text-gray-300 flex items-center border-b-2 px-1 py-4 text-sm font-medium transition-all inline_9703d2e0">
+         <svg class="lucide lucide-play mr-2 h-4 w-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="6 3 20 12 6 21 6 3">
+          </polygon>
+         </svg>
+         Playground
+        </button>
+        <button class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:text-gray-400 dark:hover:border-gray-600 dark:hover:text-gray-300 flex items-center border-b-2 px-1 py-4 text-sm font-medium transition-all inline_9703d2e0">
+         <svg class="lucide lucide-book-open mr-2 h-4 w-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 7v14">
+          </path>
+          <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z">
+          </path>
+         </svg>
+         Examples
+        </button>
+        <button class="border-blue-500 text-blue-600 dark:border-blue-400 dark:text-blue-400 flex items-center border-b-2 px-1 py-4 text-sm font-medium transition-all inline_9703d2e0">
+         <svg class="lucide lucide-file-text mr-2 h-4 w-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z">
+          </path>
+          <path d="M14 2v4a2 2 0 0 0 2 2h4">
+          </path>
+          <path d="M10 9H8">
+          </path>
+          <path d="M16 13H8">
+          </path>
+          <path d="M16 17H8">
+          </path>
+         </svg>
+         README
+        </button>
+        <button class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:text-gray-400 dark:hover:border-gray-600 dark:hover:text-gray-300 flex items-center border-b-2 px-1 py-4 text-sm font-medium transition-all inline_9703d2e0">
+         <svg class="lucide lucide-code mr-2 h-4 w-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <polyline points="16 18 22 12 16 6">
+          </polyline>
+          <polyline points="8 6 2 12 8 18">
+          </polyline>
+         </svg>
+         API
+        </button>
+       </nav>
+      </div>
+     </header>
+     <main class="mx-auto max-w-7xl px-6 py-8 lg:px-8">
+      <section class="block inline_9703d2e0">
+       <div class="hidden inline_9703d2e0">
+        <div class="inline_9703d2e0" id="market-playground">
+         <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 inline_9703d2e0">
+         </div>
+        </div>
+       </div>
+       <section class="block inline_9703d2e0">
+        <div class="inline_9703d2e0" id="market-playground">
+         <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 inline_9703d2e0">
+          <div class="rounded-xl border border-gray-200 bg-white shadow-sm dark:border-gray-700 dark:bg-gray-800 inline_9703d2e0">
+          </div>
+          <div class="rounded-xl border border-gray-200 bg-white shadow-sm dark:border-gray-700 dark:bg-gray-800 inline_9703d2e0">
+           <div class="p-6 inline_9703d2e0">
+            <div class="mb-6 inline_9703d2e0">
+             <div class="group relative inline_9703d2e0">
+              <div class="relative h-auto w-full overflow-hidden rounded-lg border border-gray-200 dark:border-gray-600 inline_9703d2e0">
+               <button class="z-0 group inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-tiny gap-2 rounded-small px-0 !gap-0 transition-transform-colors-opacity motion-reduce:transition-none text-primary-600 min-w-8 w-8 h-8 data-[hover=true]:opacity-hover absolute bottom-2 right-2 bg-white/80 opacity-0 transition-opacity group-hover:opacity-100 dark:bg-gray-800/80 inline_9703d2e0" type="button">
+                <svg class="lucide lucide-download h-4 w-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4">
+                 </path>
+                 <polyline points="7 10 12 15 17 10">
+                 </polyline>
+                 <line x1="12" x2="12" y1="15" y2="3">
+                 </line>
+                </svg>
+               </button>
+              </div>
+             </div>
+            </div>
+            <div class="mb-4 flex w-full items-center justify-end gap-3 inline_9703d2e0">
+             <button class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-small gap-2 rounded-medium px-0 !gap-0 transition-transform-colors-opacity motion-reduce:transition-none bg-primary text-primary-foreground min-w-10 w-10 h-10 data-[hover=true]:opacity-hover inline_9703d2e0" type="button">
+              <svg class="lucide lucide-download h-4 w-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4">
+               </path>
+               <polyline points="7 10 12 15 17 10">
+               </polyline>
+               <line x1="12" x2="12" y1="15" y2="3">
+               </line>
+              </svg>
+             </button>
+             <div class="inline_9703d2e0">
+              <button class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 border-medium bg-transparent text-small gap-2 rounded-medium !gap-0 transition-transform-colors-opacity motion-reduce:transition-none border-primary text-primary data-[hover=true]:!bg-primary data-[hover=true]:!text-primary-foreground min-w-10 h-10 w-max px-2 inline_9703d2e0" type="button">
+               <svg class="lucide lucide-history mr-2 h-4 w-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8">
+                </path>
+                <path d="M3 3v5h5">
+                </path>
+                <path d="M12 7v5l4 2">
+                </path>
+               </svg>
+               View full history
+              </button>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </section>
+      </section>
+      <div>
+       <section class="mt-8 space-y-8" id="readme">
+        <div class="rounded-xl border border-gray-200 bg-white shadow-sm dark:border-gray-700 dark:bg-gray-800">
+         <div class="w-full lg:p-10">
+          <div>
+           <section class="px-4 py-10 md:py-32">
+            <div class="container mx-auto text-center">
+             <div class="mx-auto flex max-w-5xl flex-col gap-6">
+              <h1 class="text-4xl font-semibold lg:text-6xl">
+               Affordable Nano Banana API for Precise AI Image Editing
+              </h1>
+              <p class="text-muted-foreground text-balance text-lg lg:text-xl">
+               Fast, realistic image generation and editing. Affordable Nano Banana API pricing, stable high-concurrency support, and detailed API documentation make integration easy.
+              </p>
+             </div>
+             <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-10 rounded-md px-8 mt-10" href="https://kie.ai/api-key" target="_self">
+              Get Nano Banana API Key
+             </a>
+             <div class="mx-auto mt-10 flex w-fit flex-col items-center gap-4 sm:flex-row">
+              <span class="mx-4 inline-flex items-center -space-x-4">
+               <div class="size-14 overflow-hidden rounded-full border">
+                <img alt="Avatar 1" class="size-14 rounded-full object-cover" src="images/img_-8991009695275146844.webp" width="120"/>
+               </div>
+               <div class="size-14 overflow-hidden rounded-full border">
+                <img alt="Avatar 2" class="size-14 rounded-full object-cover" src="images/img_-5636118269415989598.webp" width="120"/>
+               </div>
+               <div class="size-14 overflow-hidden rounded-full border">
+                <img alt="Avatar 3" class="size-14 rounded-full object-cover" src="images/img_-7486167715621799926.webp" width="120"/>
+               </div>
+               <div class="size-14 overflow-hidden rounded-full border">
+                <img alt="Avatar 4" class="size-14 rounded-full object-cover" src="images/img_2834709376130903111.webp" width="120"/>
+               </div>
+               <div class="size-14 overflow-hidden rounded-full border">
+                <img alt="Avatar 5" class="size-14 rounded-full object-cover" src="images/img_1767221478786460220.webp" width="120"/>
+               </div>
+              </span>
+              <div>
+               <div class="flex items-center gap-1">
+                <svg aria-hidden="true" class="lucide lucide-star size-5 fill-yellow-400 text-yellow-400" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                 </path>
+                </svg>
+                <svg aria-hidden="true" class="lucide lucide-star size-5 fill-yellow-400 text-yellow-400" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                 </path>
+                </svg>
+                <svg aria-hidden="true" class="lucide lucide-star size-5 fill-yellow-400 text-yellow-400" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                 </path>
+                </svg>
+                <svg aria-hidden="true" class="lucide lucide-star size-5 fill-yellow-400 text-yellow-400" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                 </path>
+                </svg>
+                <svg aria-hidden="true" class="lucide lucide-star size-5 fill-yellow-400 text-yellow-400" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                 </path>
+                </svg>
+                <span class="mr-1 font-semibold">
+                 5.0
+                </span>
+               </div>
+               <p class="text-muted-foreground text-left font-medium">
+                from 5000+ reviews
+               </p>
+              </div>
+             </div>
+            </div>
+           </section>
+           <section class="relative z-[1] mx-auto max-w-7xl overflow-hidden px-4 py-10 sm:px-6 lg:px-8 lg:py-16" id="WhatIs1-e7d377f9-6a87-471f-976a-82d942a142eb">
+            <div class="relative" data-section-type="Section">
+             <div class="mx-auto flex w-full flex-col items-center gap-4 text-center lg:max-w-4xl lg:gap-6">
+              <h2 class="text-3xl font-semibold text-[var(--akr-color-text-h2)] lg:text-4xl">
+               Integrating Gemini 2.5 Flash Image Preview Capabilities with the Nano Banana API
+              </h2>
+             </div>
+             <p class="mt-4 w-full whitespace-pre-line break-words text-base leading-7 text-[var(--akr-color-text-primary)] md:mt-6 lg:text-lg [&amp;_a]:font-bold [&amp;_a]:text-[var(--akr-color-link)] hover:[&amp;_a]:text-[var(--akr-color-link-hover)] text-left">
+              The Gemini 2.5 Flash Image, unveiled by Google as the model behind the enigmatic "Nano Banana," redefines AI image generation and editing. Launched on August 26, 2025, this advanced AI image model empowers users to create and modify visuals using simple, natural language prompts like "add a sunset to the background". With its rapid generation of high-resolution images, consistent style preservation, and support for diverse artistic styles, Google Nano Banana sets a new standard for AI Image tools, making professional-grade results accessible to all.
+
+Through Kie.ai, developers can harness the Nano Banana API for seamless integration into their applications. Offering a cost-effective alternative to Google&rsquo;s direct Gemini 2.5 Flash Image API, Kie.ai provides stable, high-concurrency support, ensuring smooth performance even under heavy workloads. With robust support for high-concurrency workloads, clear API documentation, and easy setup via a Nano Banana API key, Kie.ai ensures developers can integrate at an affordable Nano Banana API price, all while leveraging the power of Gemini Flash image generation.
+             </p>
+             <div class="mx-auto mt-4 w-full md:mt-10 lg:mt-14">
+             </div>
+            </div>
+           </section>
+           <div id="FeatureKeyFeatures1-3fd96276-0193-48c9-a2b4-94a43652bc64">
+            <section class="relative z-[1] mx-auto max-w-7xl overflow-hidden px-4 py-10 sm:px-6 lg:px-8 lg:py-16">
+             <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" data-section-type="Section">
+              <div class="mx-auto flex w-full flex-col items-center gap-4 text-center lg:max-w-4xl lg:gap-6">
+               <h2 class="text-3xl font-semibold text-[var(--akr-color-text-h2)] lg:text-4xl">
+                Key Features of Nano Banana API
+               </h2>
+              </div>
+              <div class="mt-6 space-y-4 md:mt-10 lg:mt-14">
+               <div class="group relative" id="FeatureKeyFeatures1Item-1b51da39-fca7-40eb-901c-ea818d0dce2a">
+                <div class="flex items-center gap-8 lg:gap-16 flex-col lg:flex-row">
+                 <div class="relative w-full lg:w-1/2">
+                  <div class="relative overflow-hidden rounded-2xl bg-[var(--akr-color-background-dark)] p-1 shadow-lg transition-all duration-500 group-hover:shadow-xl">
+                   <img alt="Intuitive Natural Language Editing" class="aspect-[3/2] h-auto w-full rounded-xl object-cover transition-transform duration-500 group-hover:scale-105" height="400" src="images/img_6526541124982266250.webp" width="600"/>
+                  </div>
+                 </div>
+                 <div class="w-full space-y-6 lg:w-1/2">
+                  <h3 class="text-xl font-medium text-[var(--akr-color-text-h3)] lg:text-2xl">
+                   Intuitive Natural Language Editing
+                  </h3>
+                  <div class="relative">
+                   <p class="whitespace-pre-line break-words text-base leading-7 text-[var(--akr-color-text-primary)]">
+                    <span>
+                     The Nano Banana API delivers highly accurate image editing using simple text prompts like &ldquo;add a sunset glow&rdquo; or &ldquo;replace the chair with a throne.&rdquo; It doesn&rsquo;t just recognize simple instructions&mdash;it also interprets complex input with precision, faithfully converting user intent into visually accurate results.
+                    </span>
+                   </p>
+                  </div>
+                 </div>
+                </div>
+               </div>
+               <div class="group relative" id="FeatureKeyFeatures1Item-366a3169-5316-4722-a885-5310acf45319">
+                <div class="flex items-center gap-8 lg:gap-16 flex-col lg:flex-row-reverse">
+                 <div class="relative w-full lg:w-1/2">
+                  <div class="relative overflow-hidden rounded-2xl bg-[var(--akr-color-background-dark)] p-1 shadow-lg transition-all duration-500 group-hover:shadow-xl">
+                   <img alt="Consistent and Reliable Outputs" class="aspect-[3/2] h-auto w-full rounded-xl object-cover transition-transform duration-500 group-hover:scale-105" height="400" src="images/img_5168208495659868329.webp" width="600"/>
+                  </div>
+                 </div>
+                 <div class="w-full space-y-6 lg:w-1/2">
+                  <h3 class="text-xl font-medium text-[var(--akr-color-text-h3)] lg:text-2xl">
+                   Consistent and Reliable Outputs
+                  </h3>
+                  <div class="relative">
+                   <p class="whitespace-pre-line break-words text-base leading-7 text-[var(--akr-color-text-primary)]">
+                    <span>
+                     The Gemini 2.5 Flash Image API maintains coherence across iterative edits, avoiding distortions or style drift. Whether you're updating the same image multiple times or applying similar edits across a batch, the Nano Banana AI image editing API ensures consistent results.
+                    </span>
+                   </p>
+                  </div>
+                 </div>
+                </div>
+               </div>
+               <div class="group relative" id="FeatureKeyFeatures1Item-5a8d2b7c-50d8-404a-8da8-ad4f58de4c97">
+                <div class="flex items-center gap-8 lg:gap-16 flex-col lg:flex-row">
+                 <div class="relative w-full lg:w-1/2">
+                  <div class="relative overflow-hidden rounded-2xl bg-[var(--akr-color-background-dark)] p-1 shadow-lg transition-all duration-500 group-hover:shadow-xl">
+                   <img alt="Precision-Controlled Editing" class="aspect-[3/2] h-auto w-full rounded-xl object-cover transition-transform duration-500 group-hover:scale-105" height="400" src="images/img_5393597131167609211.webp" width="600"/>
+                  </div>
+                 </div>
+                 <div class="w-full space-y-6 lg:w-1/2">
+                  <h3 class="text-xl font-medium text-[var(--akr-color-text-h3)] lg:text-2xl">
+                   Precision-Controlled Editing
+                  </h3>
+                  <div class="relative">
+                   <p class="whitespace-pre-line break-words text-base leading-7 text-[var(--akr-color-text-primary)]">
+                    <span>
+                     With the Gemini 2.5 Flash Image API, edits such as object replacement, background modification, or facial refinement are executed with pixel-level accuracy. The Nano Banana API preserves the integrity of the original scene, ensuring each change blends seamlessly for professional-quality results.
+                    </span>
+                   </p>
+                  </div>
+                 </div>
+                </div>
+               </div>
+               <div class="group relative" id="FeatureKeyFeatures1Item-5988c159-af11-4663-9ce6-13ef5c960c99">
+                <div class="flex items-center gap-8 lg:gap-16 flex-col lg:flex-row-reverse">
+                 <div class="relative w-full lg:w-1/2">
+                  <div class="relative overflow-hidden rounded-2xl bg-[var(--akr-color-background-dark)] p-1 shadow-lg transition-all duration-500 group-hover:shadow-xl">
+                   <img alt="Lightning-Fast Performance" class="aspect-[3/2] h-auto w-full rounded-xl object-cover transition-transform duration-500 group-hover:scale-105" height="400" src="images/img_7538674778913840855.webp" width="600"/>
+                  </div>
+                 </div>
+                 <div class="w-full space-y-6 lg:w-1/2">
+                  <h3 class="text-xl font-medium text-[var(--akr-color-text-h3)] lg:text-2xl">
+                   Lightning-Fast Performance
+                  </h3>
+                  <div class="relative">
+                   <p class="whitespace-pre-line break-words text-base leading-7 text-[var(--akr-color-text-primary)]">
+                    <span>
+                     Speed is a hallmark of the Nano Banana API, delivering Nano Banana AI image generator outputs and edits in tens of seconds. This rapid performance supports real-time applications, from instant content creation to quick prototyping, allowing developers to maintain efficient workflows without sacrificing output quality.
+                    </span>
+                   </p>
+                  </div>
+                 </div>
+                </div>
+               </div>
+               <div class="group relative" id="FeatureKeyFeatures1Item-bd8930d8-d807-4691-9aac-bbf82e421a78">
+                <div class="flex items-center gap-8 lg:gap-16 flex-col lg:flex-row">
+                 <div class="relative w-full lg:w-1/2">
+                  <div class="relative overflow-hidden rounded-2xl bg-[var(--akr-color-background-dark)] p-1 shadow-lg transition-all duration-500 group-hover:shadow-xl">
+                   <img alt="Realistic Physics-Aware Visual Output" class="aspect-[3/2] h-auto w-full rounded-xl object-cover transition-transform duration-500 group-hover:scale-105" height="400" src="images/img_-6508191928373788646.webp" width="600"/>
+                  </div>
+                 </div>
+                 <div class="w-full space-y-6 lg:w-1/2">
+                  <h3 class="text-xl font-medium text-[var(--akr-color-text-h3)] lg:text-2xl">
+                   Realistic Physics-Aware Visual Output
+                  </h3>
+                  <div class="relative">
+                   <p class="whitespace-pre-line break-words text-base leading-7 text-[var(--akr-color-text-primary)]">
+                    <span>
+                     Powered by Gemini&rsquo;s advanced reasoning capabilities, the Nano Banana API generates images that align with real-world logic&mdash;producing coherent lighting, natural shadows, and accurate spatial relationships. Whether handling complex backgrounds or inserting new objects, every edit maintains visual consistency.
+                    </span>
+                   </p>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </section>
+           </div>
+           <section class="relative z-[1] mx-auto max-w-7xl overflow-hidden px-4 py-10 sm:px-6 lg:px-8 lg:py-16" id="WhatIs1-6f2c6845-e0b8-4651-a9dc-38c1234e3b0c">
+            <div class="relative" data-section-type="Section">
+             <div class="mx-auto flex w-full flex-col items-center gap-4 text-center lg:max-w-4xl lg:gap-6">
+              <h2 class="text-3xl font-semibold text-[var(--akr-color-text-h2)] lg:text-4xl">
+               Gemini 2.5 Flash Image Preview API Pricing &ndash; Affordable Access with Kie.ai
+              </h2>
+             </div>
+             <p class="mt-4 w-full whitespace-pre-line break-words text-base leading-7 text-[var(--akr-color-text-primary)] md:mt-6 lg:text-lg [&amp;_a]:font-bold [&amp;_a]:text-[var(--akr-color-link)] hover:[&amp;_a]:text-[var(--akr-color-link-hover)] text-left">
+              Google&rsquo;s official Gemini 2.5 Flash Image Preview API pricing is set at $30 per 1 million output tokens, with each image costing 1,290 tokens, or $0.039 per image. Accessible through Google AI Studio or Vertex AI, it requires a Google Cloud project.
+
+Kie.ai makes the Gemini 2.5 Flash Image Preview API more affordable at just $0.02 per image&mdash;nearly half the cost of Google&rsquo;s pricing. With a flexible credit system starting at $5, no subscription is needed, and bulk purchases unlock bigger discounts. 
+
+For developers seeking value, Kie.ai&rsquo;s Nano Banana API deliver the power of Gemini Flash image generation at a lower pricing, balancing affordability with performance.
+             </p>
+             <div class="mx-auto mt-4 w-full md:mt-10 lg:mt-14">
+             </div>
+            </div>
+           </section>
+           <section class="relative z-[1] mx-auto max-w-7xl overflow-hidden px-4 py-10 sm:px-6 lg:px-8 lg:py-16" id="HowToUse2-942bc091-1951-4ded-8108-bf31ddb54c7f">
+            <div class="relative" data-section-type="Section">
+             <div class="mx-auto flex w-full flex-col items-center gap-4 text-center lg:max-w-4xl lg:gap-6">
+              <h2 class="text-3xl font-semibold text-[var(--akr-color-text-h2)] lg:text-4xl">
+               How to Access Nano Banana AI Image Generation API
+              </h2>
+             </div>
+             <div class="mt-6 px-4 md:mt-10 lg:mt-14">
+              <ul class="grid w-full grid-cols-1">
+               <div>
+                <li class="border-default relative flex w-full flex-col items-start justify-start gap-2 border-l border-dotted border-[rgba(var(--akr-color-primary-rgb),0.2)] pb-8 pl-8 text-lg lg:pb-10" data-section-type="SubSection" id="HowToUse2Item-3773aa65-4e65-4a32-b87c-5728d170c763">
+                 <header class="absolute -left-2.5 -top-0.5 flex h-5 w-5 items-center justify-center rounded-full border border-[var(--akr-color-primary)] bg-[rgba(var(--akr-color-primary-rgb),0.1)]">
+                  <svg aria-hidden="true" class="iconify iconify--material-symbols h-full w-full text-[var(--akr-color-primary)]" height="1em" role="img" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                   <path d="M12 22q-1.25 0-2.125-.875T9 19t.875-2.125T12 16t2.125.875T15 19t-.875 2.125T12 22m-1-11.825V3q0-.425.288-.712T12 2t.713.288T13 3v7.175L14.875 8.3q.275-.275.688-.275t.712.275q.3.3.3.713t-.3.712L12.7 13.3q-.3.3-.7.3t-.7-.3L7.7 9.7q-.275-.275-.288-.687T7.7 8.3q.275-.275.7-.275t.7.275z" fill="currentColor">
+                   </path>
+                  </svg>
+                 </header>
+                 <div class="flex w-full flex-col items-start gap-4 md:flex-row">
+                  <div class="min-w-0 flex-1">
+                   <h3 class="text-xl font-medium text-[var(--akr-color-text-h3)]">
+                    Step 1: Sign Up for Nano Banana API Key
+                   </h3>
+                   <p class="mt-2 w-full whitespace-pre-line break-words text-base leading-7 text-[var(--akr-color-text-primary)] [&amp;_a]:font-bold [&amp;_a]:text-[var(--akr-color-link)] hover:[&amp;_a]:text-[var(--akr-color-link-hover)]">
+                    Sign up on Kie.ai and generate a secure Nano Banana API key. This API key is required for authentication and enables you to access the full capabilities of the Gemini 2.5 Flash Image Preview generation.
+                   </p>
+                  </div>
+                 </div>
+                </li>
+                <li class="border-default relative flex w-full flex-col items-start justify-start gap-2 border-l border-dotted border-[rgba(var(--akr-color-primary-rgb),0.2)] pb-8 pl-8 text-lg lg:pb-10" data-section-type="SubSection" id="HowToUse2Item-e0096bb8-cd5c-4377-9d95-375ed5cb2265">
+                 <header class="absolute -left-2.5 -top-0.5 flex h-5 w-5 items-center justify-center rounded-full border border-[var(--akr-color-primary)] bg-[rgba(var(--akr-color-primary-rgb),0.1)]">
+                  <svg aria-hidden="true" class="iconify iconify--material-symbols h-full w-full text-[var(--akr-color-primary)]" height="1em" role="img" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                   <path d="M12 22q-1.25 0-2.125-.875T9 19t.875-2.125T12 16t2.125.875T15 19t-.875 2.125T12 22m-1-11.825V3q0-.425.288-.712T12 2t.713.288T13 3v7.175L14.875 8.3q.275-.275.688-.275t.712.275q.3.3.3.713t-.3.712L12.7 13.3q-.3.3-.7.3t-.7-.3L7.7 9.7q-.275-.275-.288-.687T7.7 8.3q.275-.275.7-.275t.7.275z" fill="currentColor">
+                   </path>
+                  </svg>
+                 </header>
+                 <div class="flex w-full flex-col items-start gap-4 md:flex-row">
+                  <div class="min-w-0 flex-1">
+                   <h3 class="text-xl font-medium text-[var(--akr-color-text-h3)]">
+                    Step 2: Send Requests to Nano Banana API
+                   </h3>
+                   <p class="mt-2 w-full whitespace-pre-line break-words text-base leading-7 text-[var(--akr-color-text-primary)] [&amp;_a]:font-bold [&amp;_a]:text-[var(--akr-color-link)] hover:[&amp;_a]:text-[var(--akr-color-link-hover)]">
+                    Use your Nano Banana API key to send POST requests with either a text prompt or an image URL. The Nano Banana API processes your input in tens of seconds, handling tasks such as image generation, editing, or style conversion.
+                   </p>
+                  </div>
+                 </div>
+                </li>
+                <li class="border-default relative flex w-full flex-col items-start justify-start gap-2 border-l border-dotted border-[rgba(var(--akr-color-primary-rgb),0.2)] pb-8 pl-8 text-lg last:border-none last:pb-0 lg:pb-10" data-section-type="SubSection" id="HowToUse2Item-70a80012-4efa-49c3-9e19-3e5dc0e73ae5">
+                 <header class="absolute -left-2.5 -top-0.5 flex h-5 w-5 items-center justify-center rounded-full border border-[var(--akr-color-primary)] bg-[rgba(var(--akr-color-primary-rgb),0.1)]">
+                  <svg aria-hidden="true" class="iconify iconify--material-symbols h-full w-full text-[var(--akr-color-primary)]" height="1em" role="img" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                   <path d="m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4z" fill="currentColor">
+                   </path>
+                  </svg>
+                 </header>
+                 <div class="flex w-full flex-col items-start gap-4 md:flex-row">
+                  <div class="min-w-0 flex-1">
+                   <h3 class="text-xl font-medium text-[var(--akr-color-text-h3)]">
+                    Step 3: Retrieve and Verify Results
+                   </h3>
+                   <p class="mt-2 w-full whitespace-pre-line break-words text-base leading-7 text-[var(--akr-color-text-primary)] [&amp;_a]:font-bold [&amp;_a]:text-[var(--akr-color-link)] hover:[&amp;_a]:text-[var(--akr-color-link-hover)]">
+                    After processing, the API responds with the task status and output data. If you provide a callback URL, the Nano Banana API will automatically deliver results to your application for seamless integration.
+                   </p>
+                  </div>
+                 </div>
+                </li>
+               </div>
+              </ul>
+             </div>
+            </div>
+           </section>
+           <section class="px-4 py-10 md:py-32">
+            <div class="container mx-auto">
+             <h2 class="text-3xl font-semibold lg:text-4xl">
+              Why Choose Kie.ai for Gemini 2.5 Flash Image API Integration
+             </h2>
+             <div class="mt-14 grid gap-6 lg:mt-20 lg:grid-cols-3">
+              <div class="bg-accent rounded-lg p-5">
+               <span class="bg-background mb-8 flex size-12 items-center justify-center rounded-full">
+                <svg aria-hidden="true" class="iconify iconify--lucide size-6" height="1em" role="img" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                 <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M10 2h4m-2 12l3-3">
+                  </path>
+                  <circle cx="12" cy="14" r="8">
+                  </circle>
+                 </g>
+                </svg>
+               </span>
+               <h3 class="mb-2 text-xl font-medium">
+                Affordable Nano Banana API Pricing
+               </h3>
+               <p class="text-muted-foreground text-base leading-7">
+                Kie.ai delivers a cost-effective Nano Banana API price at just $0.02 per image, with a pay-as-you-go credit system. No subscriptions are needed, and bulk purchases offer greater discounts, enabling developers to integrate the Gemini 2.5 Flash Image Preview into projects of any scale with ease.
+               </p>
+              </div>
+              <div class="bg-accent rounded-lg p-5">
+               <span class="bg-background mb-8 flex size-12 items-center justify-center rounded-full">
+                <svg aria-hidden="true" class="iconify iconify--lucide size-6" height="1em" role="img" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                 <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <circle cx="11" cy="11" r="8">
+                  </circle>
+                  <path d="m21 21l-4.35-4.35M11 8v6m-3-3h6">
+                  </path>
+                 </g>
+                </svg>
+               </span>
+               <h3 class="mb-2 text-xl font-medium">
+                Comprehensive Nano Banana API Documentation
+               </h3>
+               <p class="text-muted-foreground text-base leading-7">
+                Kie.ai provides detailed Nano Banana API documentation, complete with step-by-step guides, code samples, and best practices for seamless integration. With 24/7 technical support, developers can quickly implement the Gemini 2.5 Flash Image into their apps.
+               </p>
+              </div>
+              <div class="bg-accent rounded-lg p-5">
+               <span class="bg-background mb-8 flex size-12 items-center justify-center rounded-full">
+                <svg aria-hidden="true" class="iconify iconify--lucide size-6" height="1em" role="img" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                 </path>
+                </svg>
+               </span>
+               <h3 class="mb-2 text-xl font-medium">
+                Stable Performance with High-Concurrency Support
+               </h3>
+               <p class="text-muted-foreground text-base leading-7">
+                Built for reliability, Kie.ai ensures Nano Banana API access delivers 99.9% uptime and supports high-concurrency workloads. Whether powering real-time creation or scaling for large-scale apps, the Nano Banana AI image generator API performs consistently.
+               </p>
+              </div>
+             </div>
+            </div>
+           </section>
+           <section class="relative z-[1] mx-auto max-w-7xl overflow-hidden px-4 py-10 sm:px-6 lg:px-8 lg:py-16" data-section-type="Section" id="Table1-680ca336-e161-4a39-aa84-963c163985d2">
+            <div class="mx-auto flex w-full flex-col items-center gap-4 text-center lg:gap-6">
+             <h2 class="mx-auto text-3xl font-semibold text-[var(--akr-color-text-h2)] lg:max-w-4xl lg:text-4xl">
+              Comparison: Gemini 2.5 Flash Image vs. Flux Kontext vs. Qwen Image Edit
+             </h2>
+            </div>
+            <p class="mx-auto mt-4 w-full whitespace-pre-line break-words text-base leading-7 text-[var(--akr-color-text-secondary)] md:mt-6 lg:text-lg text-left">
+             The Gemini 2.5 Flash Image, Flux Kontext, and Qwen-Image-Edit are leading AI image generation and editing tools, each with distinct strengths. Nano Banana AI excels in precise, natural language-driven edits and realistic outputs. Flux AI offers robust contextual generation, while Qwen Image Edit prioritizes speed and open-source accessibility. The table below compares their key features and performance:
+            </p>
+            <div class="mt-8 overflow-x-auto rounded-2xl">
+             <table class="min-w-full border border-[rgba(var(--akr-color-rgb),0.05)] bg-[var(--akr-color-background-light)] shadow-sm">
+              <thead>
+               <tr>
+                <th class="border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-left font-medium uppercase tracking-wider text-[var(--akr-color-text-primary)]">
+                </th>
+                <th class="border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-left font-medium uppercase tracking-wider text-[var(--akr-color-text-primary)]">
+                 Gemini 2.5 Flash Image
+                </th>
+                <th class="border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-left font-medium uppercase tracking-wider text-[var(--akr-color-text-primary)]">
+                 Flux Kontext
+                </th>
+                <th class="border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-left font-medium uppercase tracking-wider text-[var(--akr-color-text-primary)]">
+                 Qwen-Image-Edit
+                </th>
+               </tr>
+              </thead>
+              <tbody class="divide-y divide-[rgba(var(--akr-color-rgb),0.05)]">
+               <tr class="bg-[var(--akr-color-background)]" data-section-type="SubSection" data-subsection-index="0">
+                <td class="whitespace-pre-line border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-sm text-[var(--akr-color-text-primary)]" data-cell-key="col_1" data-section-type="TableCell">
+                 <span>
+                  Core Focus
+                 </span>
+                </td>
+                <td class="whitespace-pre-line border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-sm text-[var(--akr-color-text-primary)]" data-cell-key="col_2" data-section-type="TableCell">
+                 <span>
+                  Precise AI image editing and generation via natural language
+                 </span>
+                </td>
+                <td class="whitespace-pre-line border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-sm text-[var(--akr-color-text-primary)]" data-cell-key="col_3" data-section-type="TableCell">
+                 <span>
+                  Contextual image generation and editing
+                 </span>
+                </td>
+                <td class="whitespace-pre-line border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-sm text-[var(--akr-color-text-primary)]" data-cell-key="col_1756171757627_769zq5o2b_3" data-section-type="TableCell">
+                 <span>
+                  Fast, open-source image editing
+                 </span>
+                </td>
+               </tr>
+               <tr class="bg-[var(--akr-color-background-light)]" data-section-type="SubSection" data-subsection-index="1">
+                <td class="whitespace-pre-line border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-sm text-[var(--akr-color-text-primary)]" data-cell-key="col_1" data-section-type="TableCell">
+                 <span>
+                  Editing Precision
+                 </span>
+                </td>
+                <td class="whitespace-pre-line border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-sm text-[var(--akr-color-text-primary)]" data-cell-key="col_2" data-section-type="TableCell">
+                 <span>
+                  High: Excels in object swaps, style transfers, and scene consistency
+                 </span>
+                </td>
+                <td class="whitespace-pre-line border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-sm text-[var(--akr-color-text-primary)]" data-cell-key="col_3" data-section-type="TableCell">
+                 <span>
+                  Moderate: Good for broad changes, struggles with complex details
+                 </span>
+                </td>
+                <td class="whitespace-pre-line border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-sm text-[var(--akr-color-text-primary)]" data-cell-key="col_1756171757627_769zq5o2b_3" data-section-type="TableCell">
+                 <span>
+                  High: Fast but less consistent than Nano Banana AI
+                 </span>
+                </td>
+               </tr>
+               <tr class="bg-[var(--akr-color-background)]" data-section-type="SubSection" data-subsection-index="2">
+                <td class="whitespace-pre-line border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-sm text-[var(--akr-color-text-primary)]" data-cell-key="col_1" data-section-type="TableCell">
+                 <span>
+                  Speed
+                 </span>
+                </td>
+                <td class="whitespace-pre-line border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-sm text-[var(--akr-color-text-primary)]" data-cell-key="col_2" data-section-type="TableCell">
+                 <span>
+                  Fast: tens of seconds per request
+                 </span>
+                </td>
+                <td class="whitespace-pre-line border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-sm text-[var(--akr-color-text-primary)]" data-cell-key="col_3" data-section-type="TableCell">
+                 <span>
+                  Variable: Slower for complex tasks (up to minutes)
+                 </span>
+                </td>
+                <td class="whitespace-pre-line border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-sm text-[var(--akr-color-text-primary)]" data-cell-key="col_1756171757627_769zq5o2b_3" data-section-type="TableCell">
+                 <span>
+                  Ultra-fast: ~8 seconds per edit
+                 </span>
+                </td>
+               </tr>
+               <tr class="bg-[var(--akr-color-background-light)]" data-section-type="SubSection" data-subsection-index="3">
+                <td class="whitespace-pre-line border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-sm text-[var(--akr-color-text-primary)]" data-cell-key="col_1" data-section-type="TableCell">
+                 <span>
+                  Realism &amp; Physics
+                 </span>
+                </td>
+                <td class="whitespace-pre-line border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-sm text-[var(--akr-color-text-primary)]" data-cell-key="col_2" data-section-type="TableCell">
+                 <span>
+                  Superior: Realistic lighting, shadows, and physics-compliant
+                 </span>
+                </td>
+                <td class="whitespace-pre-line border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-sm text-[var(--akr-color-text-primary)]" data-cell-key="col_3" data-section-type="TableCell">
+                 <span>
+                  Good: Contextual realism, occasional inconsistencies
+                 </span>
+                </td>
+                <td class="whitespace-pre-line border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-sm text-[var(--akr-color-text-primary)]" data-cell-key="col_1756171757627_769zq5o2b_3" data-section-type="TableCell">
+                 <span>
+                  Moderate: Realistic but may alter unintended details
+                 </span>
+                </td>
+               </tr>
+               <tr class="bg-[var(--akr-color-background)]" data-section-type="SubSection" data-subsection-index="4">
+                <td class="whitespace-pre-line border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-sm text-[var(--akr-color-text-primary)]" data-cell-key="col_1" data-section-type="TableCell">
+                 <span>
+                  Style Transfer
+                 </span>
+                </td>
+                <td class="whitespace-pre-line border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-sm text-[var(--akr-color-text-primary)]" data-cell-key="col_2" data-section-type="TableCell">
+                 <span>
+                  Versatile: Natural transitions across photorealistic, artistic styles
+                 </span>
+                </td>
+                <td class="whitespace-pre-line border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-sm text-[var(--akr-color-text-primary)]" data-cell-key="col_3" data-section-type="TableCell">
+                 <span>
+                  Strong: Smooth style shifts, less precise
+                 </span>
+                </td>
+                <td class="whitespace-pre-line border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-sm text-[var(--akr-color-text-primary)]" data-cell-key="col_1756171757627_769zq5o2b_3" data-section-type="TableCell">
+                 <span>
+                  Good: Limited by open-source framework
+                 </span>
+                </td>
+               </tr>
+               <tr class="bg-[var(--akr-color-background-light)]" data-section-type="SubSection" data-subsection-index="5">
+                <td class="whitespace-pre-line border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-sm text-[var(--akr-color-text-primary)]" data-cell-key="col_1" data-section-type="TableCell">
+                 <span>
+                  Consistency
+                 </span>
+                </td>
+                <td class="whitespace-pre-line border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-sm text-[var(--akr-color-text-primary)]" data-cell-key="col_2" data-section-type="TableCell">
+                 <span>
+                  Exceptional: Maintains consistency across iterations
+                 </span>
+                </td>
+                <td class="whitespace-pre-line border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-sm text-[var(--akr-color-text-primary)]" data-cell-key="col_3" data-section-type="TableCell">
+                 <span>
+                  Inconsistent in complex edits
+                 </span>
+                </td>
+                <td class="whitespace-pre-line border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-sm text-[var(--akr-color-text-primary)]" data-cell-key="col_1756171757627_769zq5o2b_3" data-section-type="TableCell">
+                 <span>
+                  Moderate: May alter backgrounds or faces
+                 </span>
+                </td>
+               </tr>
+               <tr class="bg-[var(--akr-color-background)]" data-section-type="SubSection" data-subsection-index="6">
+                <td class="whitespace-pre-line border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-sm text-[var(--akr-color-text-primary)]" data-cell-key="col_1" data-section-type="TableCell">
+                 <span>
+                  Pricing
+                 </span>
+                </td>
+                <td class="whitespace-pre-line border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-sm text-[var(--akr-color-text-primary)]" data-cell-key="col_2" data-section-type="TableCell">
+                 <span>
+                  $0.02 per image on Kie.ai
+                 </span>
+                </td>
+                <td class="whitespace-pre-line border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-sm text-[var(--akr-color-text-primary)]" data-cell-key="col_3" data-section-type="TableCell">
+                 <span>
+                  $0.025 or $0.05 per image on Kie.ai
+                 </span>
+                </td>
+                <td class="whitespace-pre-line border-b border-[rgba(var(--akr-color-rgb),0.05)] px-6 py-4 text-sm text-[var(--akr-color-text-primary)]" data-cell-key="col_1756171757627_769zq5o2b_3" data-section-type="TableCell">
+                 <span>
+                  $0.0165 per image on Kie.ai
+                 </span>
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </div>
+           </section>
+           <section class="py-16 px-4 lg:px-0 md:px-2">
+            <div class="container mx-auto max-w-5xl">
+             <h2 class="mb-4 text-3xl font-semibold md:mb-11 lg:text-4xl">
+              Frequently Asked Questions About Nano Banana API
+             </h2>
+             <div data-orientation="vertical" data-slot="accordion">
+              <div class="border-b last:border-b-0" data-orientation="vertical" data-slot="accordion-item" data-state="closed">
+               <h3 class="flex" data-orientation="vertical" data-state="closed">
+                <button aria-controls="radix-:r40:" aria-expanded="false" class="focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-left transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&amp;[data-state=open]&gt;svg]:rotate-180 text-xl font-semibold hover:no-underline" data-orientation="vertical" data-radix-collection-item="" data-slot="accordion-trigger" data-state="closed" id="radix-:r3v:" type="button">
+                 What is the Nano Banana API and how does it function?
+                 <svg aria-hidden="true" class="lucide lucide-chevron-down text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m6 9 6 6 6-6">
+                  </path>
+                 </svg>
+                </button>
+               </h3>
+              </div>
+              <div class="border-b last:border-b-0" data-orientation="vertical" data-slot="accordion-item" data-state="closed">
+               <h3 class="flex" data-orientation="vertical" data-state="closed">
+                <button aria-controls="radix-:r42:" aria-expanded="false" class="focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-left transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&amp;[data-state=open]&gt;svg]:rotate-180 text-xl font-semibold hover:no-underline" data-orientation="vertical" data-radix-collection-item="" data-slot="accordion-trigger" data-state="closed" id="radix-:r41:" type="button">
+                 What makes the Gemini 2.5 Flash Image Preview stand out?
+                 <svg aria-hidden="true" class="lucide lucide-chevron-down text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m6 9 6 6 6-6">
+                  </path>
+                 </svg>
+                </button>
+               </h3>
+              </div>
+              <div class="border-b last:border-b-0" data-orientation="vertical" data-slot="accordion-item" data-state="closed">
+               <h3 class="flex" data-orientation="vertical" data-state="closed">
+                <button aria-controls="radix-:r44:" aria-expanded="false" class="focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-left transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&amp;[data-state=open]&gt;svg]:rotate-180 text-xl font-semibold hover:no-underline" data-orientation="vertical" data-radix-collection-item="" data-slot="accordion-trigger" data-state="closed" id="radix-:r43:" type="button">
+                 How can I obtain Nano Banana API access for my project?
+                 <svg aria-hidden="true" class="lucide lucide-chevron-down text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m6 9 6 6 6-6">
+                  </path>
+                 </svg>
+                </button>
+               </h3>
+              </div>
+              <div class="border-b last:border-b-0" data-orientation="vertical" data-slot="accordion-item" data-state="closed">
+               <h3 class="flex" data-orientation="vertical" data-state="closed">
+                <button aria-controls="radix-:r46:" aria-expanded="false" class="focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-left transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&amp;[data-state=open]&gt;svg]:rotate-180 text-xl font-semibold hover:no-underline" data-orientation="vertical" data-radix-collection-item="" data-slot="accordion-trigger" data-state="closed" id="radix-:r45:" type="button">
+                 What is the Nano Banana API price on Kie.ai?
+                 <svg aria-hidden="true" class="lucide lucide-chevron-down text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m6 9 6 6 6-6">
+                  </path>
+                 </svg>
+                </button>
+               </h3>
+              </div>
+              <div class="border-b last:border-b-0" data-orientation="vertical" data-slot="accordion-item" data-state="closed">
+               <h3 class="flex" data-orientation="vertical" data-state="closed">
+                <button aria-controls="radix-:r48:" aria-expanded="false" class="focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-left transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&amp;[data-state=open]&gt;svg]:rotate-180 text-xl font-semibold hover:no-underline" data-orientation="vertical" data-radix-collection-item="" data-slot="accordion-trigger" data-state="closed" id="radix-:r47:" type="button">
+                 How does Gemini 2.5 Flash Image compare to Qwen Image Edit?
+                 <svg aria-hidden="true" class="lucide lucide-chevron-down text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m6 9 6 6 6-6">
+                  </path>
+                 </svg>
+                </button>
+               </h3>
+              </div>
+              <div class="border-b last:border-b-0" data-orientation="vertical" data-slot="accordion-item" data-state="closed">
+               <h3 class="flex" data-orientation="vertical" data-state="closed">
+                <button aria-controls="radix-:r4a:" aria-expanded="false" class="focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-left transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&amp;[data-state=open]&gt;svg]:rotate-180 text-xl font-semibold hover:no-underline" data-orientation="vertical" data-radix-collection-item="" data-slot="accordion-trigger" data-state="closed" id="radix-:r49:" type="button">
+                 How does the Nano Banana AI model compare to Flux Kontext?
+                 <svg aria-hidden="true" class="lucide lucide-chevron-down text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m6 9 6 6 6-6">
+                  </path>
+                 </svg>
+                </button>
+               </h3>
+              </div>
+              <div class="border-b last:border-b-0" data-orientation="vertical" data-slot="accordion-item" data-state="closed">
+               <h3 class="flex" data-orientation="vertical" data-state="closed">
+                <button aria-controls="radix-:r4c:" aria-expanded="false" class="focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-left transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&amp;[data-state=open]&gt;svg]:rotate-180 text-xl font-semibold hover:no-underline" data-orientation="vertical" data-radix-collection-item="" data-slot="accordion-trigger" data-state="closed" id="radix-:r4b:" type="button">
+                 Why choose Kie.ai for Nano Banana API over other AI API platforms?
+                 <svg aria-hidden="true" class="lucide lucide-chevron-down text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m6 9 6 6 6-6">
+                  </path>
+                 </svg>
+                </button>
+               </h3>
+              </div>
+              <div class="border-b last:border-b-0" data-orientation="vertical" data-slot="accordion-item" data-state="closed">
+               <h3 class="flex" data-orientation="vertical" data-state="closed">
+                <button aria-controls="radix-:r4e:" aria-expanded="false" class="focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-left transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&amp;[data-state=open]&gt;svg]:rotate-180 text-xl font-semibold hover:no-underline" data-orientation="vertical" data-radix-collection-item="" data-slot="accordion-trigger" data-state="closed" id="radix-:r4d:" type="button">
+                 Can the Nano Banana API support text-to-image generation and image upload editing?
+                 <svg aria-hidden="true" class="lucide lucide-chevron-down text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m6 9 6 6 6-6">
+                  </path>
+                 </svg>
+                </button>
+               </h3>
+              </div>
+             </div>
+            </div>
+           </section>
+          </div>
+         </div>
+        </div>
+       </section>
+      </div>
+     </main>
+     <footer class="relative flex w-full flex-col inline_9703d2e0">
+      <div class="mx-auto flex w-full max-w-7xl flex-col items-start justify-between gap-6 px-6 py-12 lg:px-8 inline_9703d2e0">
+       <div class="mx-auto w-full border-t border-default-100 pt-4 md:flex md:items-center md:justify-between inline_9703d2e0">
+        <div class="flex flex-col items-center justify-center gap-2 md:order-2 md:items-end inline_9703d2e0">
+         <button class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-small gap-2 rounded-full px-0 !gap-0 transition-transform-colors-opacity motion-reduce:transition-none bg-transparent text-default-foreground data-[hover=true]:bg-default/40 min-w-10 w-10 h-10 inline_9703d2e0" type="button">
+          <svg aria-hidden="true" class="iconify iconify--solar text-default-500" height="24" role="img" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+           <g fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="6">
+            </circle>
+            <path d="M12 2v1m0 18v1m10-10h-1M3 12H2m17.07-7.07l-.392.393M5.322 18.678l-.393.393m14.141-.001l-.392-.393M5.322 5.322l-.393-.393" stroke-linecap="round">
+            </path>
+           </g>
+          </svg>
+         </button>
+        </div>
+       </div>
+      </div>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="inline_9f65e3b3" id="tcb-extension-us-wrapper">
+   <template class="inline_9703d2e0" shadowrootmode="open">
+   </template>
+  </div>
+ </body>
+</html>

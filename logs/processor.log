@@ -1,0 +1,49 @@
+2025-11-14 10:35:34,171 - html_processor - INFO - Diretórios criados: website-nanobanana
+2025-11-14 10:35:34,173 - html_processor - INFO - === ETAPA 1: Validação ===
+2025-11-14 10:35:34,227 - html_processor - INFO - Arquivo validado: test.html (0.00MB)
+2025-11-14 10:35:34,258 - html_processor - INFO - === ETAPA 2: Carregamento ===
+2025-11-14 10:35:34,266 - html_processor - INFO - === ETAPA 3: Limpeza ===
+2025-11-14 10:35:34,292 - html_processor - INFO - HTML limpo e normalizado
+2025-11-14 10:35:34,294 - html_processor - INFO - Conversão semântica: 3 tags convertidas
+2025-11-14 10:35:34,295 - html_processor - INFO - Head limpo e otimizado
+2025-11-14 10:35:34,344 - html_processor - INFO - === ETAPA 4: Extração de Recursos ===
+2025-11-14 10:35:34,657 - html_processor - INFO - CSS extraído: 1 regras
+2025-11-14 10:35:35,036 - html_processor - DEBUG - Arquivo salvo: website-nanobanana\images\img_7987979592914953299.png
+2025-11-14 10:35:35,037 - html_processor - INFO - Imagens processadas: 1
+2025-11-14 10:35:35,116 - html_processor - INFO - === ETAPA 5: Otimização ===
+2025-11-14 10:35:35,225 - html_processor - INFO - CSS otimizado e minificado
+2025-11-14 10:35:35,247 - html_processor - INFO - === ETAPA 6: Geração de Saída ===
+2025-11-14 10:35:35,249 - html_processor - DEBUG - Arquivo salvo: website-nanobanana\styles\styles.css
+2025-11-14 10:35:35,250 - html_processor - INFO - HTML formatado em modo: beautify
+2025-11-14 10:35:35,262 - html_processor - DEBUG - Arquivo salvo: website-nanobanana/index.html
+2025-11-14 10:39:00,017 - html_processor - INFO - Diretórios criados: website-nanobanana
+2025-11-14 10:39:00,109 - html_processor - INFO - === ETAPA 1: Validação ===
+2025-11-14 10:39:01,613 - html_processor - INFO - Arquivo validado: pagBanana.html (1.30MB)
+2025-11-14 10:39:01,616 - html_processor - INFO - === ETAPA 2: Carregamento ===
+2025-11-14 10:39:01,839 - html_processor - INFO - === ETAPA 3: Limpeza ===
+2025-11-14 10:39:01,917 - html_processor - INFO - HTML limpo e normalizado
+2025-11-14 10:39:01,965 - html_processor - INFO - Conversão semântica: 11 tags convertidas
+2025-11-14 10:39:02,000 - html_processor - INFO - Head limpo e otimizado
+2025-11-14 10:39:02,068 - html_processor - INFO - === ETAPA 4: Extração de Recursos ===
+2025-11-14 10:39:02,139 - html_processor - INFO - CSS extraído: 60 regras
+2025-11-14 10:39:02,159 - html_processor - DEBUG - Arquivo salvo: website-nanobanana\images\css_img_-6176678089969773980.png
+2025-11-14 10:39:02,159 - html_processor - DEBUG - Imagem CSS extraída: css_img_-6176678089969773980.png
+2025-11-14 10:39:02,181 - html_processor - DEBUG - Arquivo salvo: website-nanobanana\images\css_img_5247961369669309163.gif
+2025-11-14 10:39:02,181 - html_processor - DEBUG - Imagem CSS extraída: css_img_5247961369669309163.gif
+2025-11-14 10:39:02,207 - html_processor - DEBUG - Arquivo salvo: website-nanobanana\images\img_-8991009695275146844.webp
+2025-11-14 10:39:02,211 - html_processor - DEBUG - Arquivo salvo: website-nanobanana\images\img_-5636118269415989598.webp
+2025-11-14 10:39:02,216 - html_processor - DEBUG - Arquivo salvo: website-nanobanana\images\img_-7486167715621799926.webp
+2025-11-14 10:39:02,229 - html_processor - DEBUG - Arquivo salvo: website-nanobanana\images\img_2834709376130903111.webp
+2025-11-14 10:39:02,325 - html_processor - DEBUG - Arquivo salvo: website-nanobanana\images\img_1767221478786460220.webp
+2025-11-14 10:39:02,328 - html_processor - DEBUG - Arquivo salvo: website-nanobanana\images\img_6526541124982266250.webp
+2025-11-14 10:39:02,336 - html_processor - DEBUG - Arquivo salvo: website-nanobanana\images\img_5168208495659868329.webp
+2025-11-14 10:39:02,356 - html_processor - DEBUG - Arquivo salvo: website-nanobanana\images\img_5393597131167609211.webp
+2025-11-14 10:39:02,363 - html_processor - DEBUG - Arquivo salvo: website-nanobanana\images\img_7538674778913840855.webp
+2025-11-14 10:39:02,367 - html_processor - DEBUG - Arquivo salvo: website-nanobanana\images\img_-6508191928373788646.webp
+2025-11-14 10:39:02,367 - html_processor - INFO - Imagens processadas: 10
+2025-11-14 10:39:02,390 - html_processor - INFO - === ETAPA 5: Otimização ===
+2025-11-14 10:39:30,773 - html_processor - INFO - CSS otimizado e minificado
+2025-11-14 10:39:30,775 - html_processor - INFO - === ETAPA 6: Geração de Saída ===
+2025-11-14 10:39:30,796 - html_processor - DEBUG - Arquivo salvo: website-nanobanana\styles\styles.css
+2025-11-14 10:39:30,915 - html_processor - INFO - HTML formatado em modo: beautify
+2025-11-14 10:39:30,921 - html_processor - DEBUG - Arquivo salvo: website-nanobanana/index.html
