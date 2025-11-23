@@ -47,3 +47,228 @@
 2025-11-14 10:39:30,796 - html_processor - DEBUG - Arquivo salvo: website-nanobanana\styles\styles.css
 2025-11-14 10:39:30,915 - html_processor - INFO - HTML formatado em modo: beautify
 2025-11-14 10:39:30,921 - html_processor - DEBUG - Arquivo salvo: website-nanobanana/index.html
+2025-11-15 17:23:59,948 - html_processor - INFO - Diretórios criados: portfolio-revamp
+2025-11-15 17:23:59,998 - html_processor - INFO - === ETAPA 1: Validação ===
+2025-11-15 17:24:00,153 - html_processor - INFO - Arquivo validado: revamp.html (3.59MB)
+2025-11-15 17:24:00,158 - html_processor - INFO - === ETAPA 2: Carregamento ===
+2025-11-15 17:24:00,520 - html_processor - INFO - === ETAPA 3: Limpeza ===
+2025-11-15 17:24:00,625 - html_processor - INFO - HTML limpo e normalizado
+2025-11-15 17:24:00,666 - html_processor - INFO - Conversão semântica: 1 tags convertidas
+2025-11-15 17:24:00,668 - html_processor - INFO - Head limpo e otimizado
+2025-11-15 17:24:00,669 - html_processor - INFO - === ETAPA 4: Extração de Recursos ===
+2025-11-15 17:24:00,749 - html_processor - INFO - CSS extraído: 141 regras
+2025-11-15 17:24:00,767 - html_processor - DEBUG - Arquivo salvo: portfolio-revamp\images\img_8a90a2724c02.png
+2025-11-15 17:24:00,767 - html_processor - DEBUG - Imagem Base64 salva: img_8a90a2724c02.png
+2025-11-15 17:24:00,808 - html_processor - DEBUG - Arquivo salvo: portfolio-revamp\images\img_8e87eefff5c5.gif
+2025-11-15 17:24:00,809 - html_processor - DEBUG - Imagem Base64 salva: img_8e87eefff5c5.gif
+2025-11-15 17:24:00,826 - html_processor - WARNING - Base64 não é uma imagem válida, ignorando
+2025-11-15 17:24:00,828 - html_processor - WARNING - Base64 não é uma imagem válida, ignorando
+2025-11-15 17:24:00,836 - html_processor - DEBUG - Arquivo salvo: portfolio-revamp\images\img_5c7cf848bc6c.webp
+2025-11-15 17:24:00,838 - html_processor - DEBUG - Imagem Base64 salva: img_5c7cf848bc6c.webp
+2025-11-15 17:24:00,841 - html_processor - WARNING - Base64 não é uma imagem válida, ignorando
+2025-11-15 17:24:00,871 - html_processor - WARNING - Base64 não é uma imagem válida, ignorando
+2025-11-15 17:24:00,871 - html_processor - INFO - Imagens processadas (Base64 + HTTP): 1
+2025-11-15 17:24:00,872 - html_processor - INFO - === ETAPA 5: Otimização ===
+2025-11-15 17:24:16,169 - html_processor - INFO - CSS otimizado e minificado
+2025-11-15 17:24:16,171 - html_processor - INFO - === ETAPA 6: Geração de Saída ===
+2025-11-15 17:24:16,205 - html_processor - DEBUG - Arquivo salvo: portfolio-revamp\styles\styles.css
+2025-11-15 17:24:16,455 - html_processor - INFO - HTML formatado em modo: beautify
+2025-11-15 17:24:16,473 - html_processor - DEBUG - Arquivo salvo: portfolio-revamp/index.html
+2025-11-15 17:26:16,686 - html_processor - INFO - Diretórios criados: web-revamp
+2025-11-15 17:26:16,693 - html_processor - INFO - === ETAPA 1: Validação ===
+2025-11-15 17:26:16,872 - html_processor - INFO - Arquivo validado: revamp.html (3.59MB)
+2025-11-15 17:26:16,930 - html_processor - INFO - === ETAPA 2: Carregamento ===
+2025-11-15 17:26:17,398 - html_processor - INFO - === ETAPA 3: Limpeza ===
+2025-11-15 17:26:17,575 - html_processor - INFO - HTML limpo e normalizado
+2025-11-15 17:26:17,685 - html_processor - INFO - Conversão semântica: 1 tags convertidas
+2025-11-15 17:26:17,890 - html_processor - INFO - Head limpo e otimizado
+2025-11-15 17:26:18,029 - html_processor - INFO - === ETAPA 4: Extração de Recursos ===
+2025-11-15 17:26:18,274 - html_processor - INFO - CSS extraído: 141 regras
+2025-11-15 17:26:18,360 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\css_img_6234802576272554782.png
+2025-11-15 17:26:18,360 - html_processor - DEBUG - Imagem CSS extraída: css_img_6234802576272554782.png
+2025-11-15 17:26:18,378 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\css_img_4050437358295698848.gif
+2025-11-15 17:26:18,379 - html_processor - DEBUG - Imagem CSS extraída: css_img_4050437358295698848.gif
+2025-11-15 17:26:18,408 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-4864692837775840287.avif
+2025-11-15 17:26:18,410 - html_processor - WARNING - Erro ao decodificar base64: Invalid base64-encoded string: number of data characters (517) cannot be 1 more than a multiple of 4
+2025-11-15 17:26:18,466 - html_processor - WARNING - Erro ao decodificar base64: Invalid base64-encoded string: number of data characters (517) cannot be 1 more than a multiple of 4
+2025-11-15 17:26:18,554 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_1515181720965493205.avif
+2025-11-15 17:26:18,574 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_8521471242337513043.webp
+2025-11-15 17:26:18,674 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_274342518859889450.png
+2025-11-15 17:26:18,747 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_274342518859889450.png
+2025-11-15 17:26:18,795 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-7364710990663779455.png
+2025-11-15 17:26:18,804 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_274342518859889450.png
+2025-11-15 17:26:18,814 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-5559934300834244818.png
+2025-11-15 17:26:18,821 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_274342518859889450.png
+2025-11-15 17:26:18,826 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_274342518859889450.png
+2025-11-15 17:26:18,830 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-7364710990663779455.png
+2025-11-15 17:26:18,870 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_274342518859889450.png
+2025-11-15 17:26:18,873 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-5559934300834244818.png
+2025-11-15 17:26:18,875 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_274342518859889450.png
+2025-11-15 17:26:18,877 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_274342518859889450.png
+2025-11-15 17:26:18,879 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-7364710990663779455.png
+2025-11-15 17:26:18,881 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_274342518859889450.png
+2025-11-15 17:26:18,887 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-5559934300834244818.png
+2025-11-15 17:26:18,889 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_274342518859889450.png
+2025-11-15 17:26:18,893 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_274342518859889450.png
+2025-11-15 17:26:18,897 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-7364710990663779455.png
+2025-11-15 17:26:18,900 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_274342518859889450.png
+2025-11-15 17:26:18,909 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-5559934300834244818.png
+2025-11-15 17:26:18,913 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_274342518859889450.png
+2025-11-15 17:26:18,916 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_274342518859889450.png
+2025-11-15 17:26:18,918 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-7364710990663779455.png
+2025-11-15 17:26:18,920 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_274342518859889450.png
+2025-11-15 17:26:18,925 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-5559934300834244818.png
+2025-11-15 17:26:18,927 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_274342518859889450.png
+2025-11-15 17:26:18,931 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_274342518859889450.png
+2025-11-15 17:26:18,934 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-7364710990663779455.png
+2025-11-15 17:26:18,953 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_274342518859889450.png
+2025-11-15 17:26:18,955 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-5559934300834244818.png
+2025-11-15 17:26:19,028 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_8702681015456468117.avif
+2025-11-15 17:26:19,094 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-513146955225974194.avif
+2025-11-15 17:26:19,094 - html_processor - INFO - Imagens processadas: 35
+2025-11-15 17:26:19,202 - html_processor - INFO - === ETAPA 5: Otimização ===
+2025-11-15 17:26:36,169 - html_processor - INFO - CSS otimizado e minificado
+2025-11-15 17:26:36,172 - html_processor - INFO - === ETAPA 6: Geração de Saída ===
+2025-11-15 17:26:36,240 - html_processor - DEBUG - Arquivo salvo: web-revamp\styles\styles.css
+2025-11-15 17:26:36,461 - html_processor - INFO - HTML formatado em modo: beautify
+2025-11-15 17:26:36,478 - html_processor - DEBUG - Arquivo salvo: web-revamp/index.html
+2025-11-15 17:29:59,100 - html_processor - INFO - Diretórios criados: web-revamp
+2025-11-15 17:29:59,109 - html_processor - INFO - === ETAPA 1: Validação ===
+2025-11-15 17:29:59,282 - html_processor - INFO - Arquivo validado: Revamp.html (3.61MB)
+2025-11-15 17:29:59,310 - html_processor - INFO - === ETAPA 2: Carregamento ===
+2025-11-15 17:30:00,070 - html_processor - INFO - === ETAPA 3: Limpeza ===
+2025-11-15 17:30:00,327 - html_processor - INFO - HTML limpo e normalizado
+2025-11-15 17:30:00,348 - html_processor - INFO - Conversão semântica: 1 tags convertidas
+2025-11-15 17:30:00,385 - html_processor - INFO - Head limpo e otimizado
+2025-11-15 17:30:00,385 - html_processor - INFO - === ETAPA 4: Extração de Recursos ===
+2025-11-15 17:30:00,434 - html_processor - INFO - CSS extraído: 140 regras
+2025-11-15 17:30:00,959 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\css_img_-7824499732560947362.png
+2025-11-15 17:30:00,959 - html_processor - DEBUG - Imagem CSS extraída: css_img_-7824499732560947362.png
+2025-11-15 17:30:00,982 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\css_img_4114989886369620696.gif
+2025-11-15 17:30:00,982 - html_processor - DEBUG - Imagem CSS extraída: css_img_4114989886369620696.gif
+2025-11-15 17:30:01,005 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_6440945014785802594.avif
+2025-11-15 17:30:01,114 - html_processor - WARNING - Erro ao decodificar base64: Invalid base64-encoded string: number of data characters (517) cannot be 1 more than a multiple of 4
+2025-11-15 17:30:01,193 - html_processor - WARNING - Erro ao decodificar base64: Invalid base64-encoded string: number of data characters (517) cannot be 1 more than a multiple of 4
+2025-11-15 17:30:01,407 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-699987587488094105.avif
+2025-11-15 17:30:01,445 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_246022007782897713.avif
+2025-11-15 17:30:01,446 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-9102886664590578519.png
+2025-11-15 17:30:01,447 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-9102886664590578519.png
+2025-11-15 17:30:01,449 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-1476419617228175845.png
+2025-11-15 17:30:01,450 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-9102886664590578519.png
+2025-11-15 17:30:01,451 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-2541064784584660310.png
+2025-11-15 17:30:01,453 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-9102886664590578519.png
+2025-11-15 17:30:01,454 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-9102886664590578519.png
+2025-11-15 17:30:01,456 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-1476419617228175845.png
+2025-11-15 17:30:01,457 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-9102886664590578519.png
+2025-11-15 17:30:01,458 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-2541064784584660310.png
+2025-11-15 17:30:01,459 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-9102886664590578519.png
+2025-11-15 17:30:01,461 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-9102886664590578519.png
+2025-11-15 17:30:01,467 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-1476419617228175845.png
+2025-11-15 17:30:01,481 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-9102886664590578519.png
+2025-11-15 17:30:01,483 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-2541064784584660310.png
+2025-11-15 17:30:01,485 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-9102886664590578519.png
+2025-11-15 17:30:01,486 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-9102886664590578519.png
+2025-11-15 17:30:01,487 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-1476419617228175845.png
+2025-11-15 17:30:01,498 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-9102886664590578519.png
+2025-11-15 17:30:01,499 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-2541064784584660310.png
+2025-11-15 17:30:01,505 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-9102886664590578519.png
+2025-11-15 17:30:01,507 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-9102886664590578519.png
+2025-11-15 17:30:01,572 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-1476419617228175845.png
+2025-11-15 17:30:01,583 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-9102886664590578519.png
+2025-11-15 17:30:01,585 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-2541064784584660310.png
+2025-11-15 17:30:01,587 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-9102886664590578519.png
+2025-11-15 17:30:01,736 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-9102886664590578519.png
+2025-11-15 17:30:01,764 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-1476419617228175845.png
+2025-11-15 17:30:01,804 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-9102886664590578519.png
+2025-11-15 17:30:01,812 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_-2541064784584660310.png
+2025-11-15 17:30:01,871 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_4802987192935601342.avif
+2025-11-15 17:30:01,920 - html_processor - DEBUG - Arquivo salvo: web-revamp\images\img_6061226503069208212.avif
+2025-11-15 17:30:01,921 - html_processor - INFO - Imagens processadas: 35
+2025-11-15 17:30:01,955 - html_processor - INFO - === ETAPA 5: Otimização ===
+2025-11-15 17:30:27,846 - html_processor - INFO - CSS otimizado e minificado
+2025-11-15 17:30:27,849 - html_processor - INFO - === ETAPA 6: Geração de Saída ===
+2025-11-15 17:30:27,950 - html_processor - DEBUG - Arquivo salvo: web-revamp\styles\styles.css
+2025-11-15 17:30:28,383 - html_processor - INFO - HTML formatado em modo: beautify
+2025-11-15 17:30:28,415 - html_processor - DEBUG - Arquivo salvo: web-revamp/index.html
+2025-11-23 16:36:22,360 - html_processor - INFO - Diretórios criados: components-design
+2025-11-23 16:36:22,654 - html_processor - INFO - === ETAPA 1: Validação ===
+2025-11-23 16:36:23,020 - html_processor - INFO - Arquivo validado: sectionDesign.html (1.34MB)
+2025-11-23 16:36:23,052 - html_processor - INFO - === ETAPA 2: Carregamento ===
+2025-11-23 16:36:23,226 - html_processor - INFO - === ETAPA 3: Limpeza ===
+2025-11-23 16:36:23,271 - html_processor - INFO - HTML limpo e normalizado
+2025-11-23 16:36:23,288 - html_processor - INFO - Conversão semântica: 1 tags convertidas
+2025-11-23 16:36:23,288 - html_processor - INFO - Head limpo e otimizado
+2025-11-23 16:36:23,288 - html_processor - INFO - === ETAPA 4: Extração de Recursos ===
+2025-11-23 16:36:23,352 - html_processor - INFO - CSS extraído: 55 regras
+2025-11-23 16:36:23,422 - html_processor - DEBUG - Arquivo salvo: components-design\images\img_8648310358605453009.avif
+2025-11-23 16:36:23,422 - html_processor - DEBUG - Arquivo salvo: components-design\images\img_6717151837424804657.avif
+2025-11-23 16:36:23,422 - html_processor - INFO - Imagens processadas: 2
+2025-11-23 16:36:23,471 - html_processor - INFO - === ETAPA 5: Otimização ===
+2025-11-23 16:36:29,009 - html_processor - INFO - CSS otimizado e minificado
+2025-11-23 16:36:29,024 - html_processor - INFO - === ETAPA 6: Geração de Saída ===
+2025-11-23 16:36:29,024 - html_processor - DEBUG - Arquivo salvo: components-design\styles\styles.css
+2025-11-23 16:36:29,138 - html_processor - INFO - HTML formatado em modo: beautify
+2025-11-23 16:36:29,138 - html_processor - DEBUG - Arquivo salvo: components-design/index.html
+2025-11-23 16:42:30,083 - html_processor - INFO - Diretórios criados: components-design
+2025-11-23 16:42:30,176 - html_processor - INFO - === ETAPA 1: Validação ===
+2025-11-23 16:42:30,277 - html_processor - INFO - Arquivo validado: Heroicons.html (1.49MB)
+2025-11-23 16:42:30,295 - html_processor - INFO - === ETAPA 2: Carregamento ===
+2025-11-23 16:42:30,624 - html_processor - INFO - === ETAPA 3: Limpeza ===
+2025-11-23 16:42:30,866 - html_processor - INFO - HTML limpo e normalizado
+2025-11-23 16:42:30,885 - html_processor - INFO - Conversão semântica: 1 tags convertidas
+2025-11-23 16:42:30,908 - html_processor - INFO - Head limpo e otimizado
+2025-11-23 16:42:30,908 - html_processor - INFO - === ETAPA 4: Extração de Recursos ===
+2025-11-23 16:42:30,949 - html_processor - INFO - CSS extraído: 8 regras
+2025-11-23 16:42:30,991 - html_processor - DEBUG - Arquivo salvo: components-design\images\css_img_-765920692684032008.png
+2025-11-23 16:42:30,991 - html_processor - DEBUG - Imagem CSS extraída: css_img_-765920692684032008.png
+2025-11-23 16:42:31,008 - html_processor - DEBUG - Arquivo salvo: components-design\images\css_img_3424269586483198564.gif
+2025-11-23 16:42:31,008 - html_processor - DEBUG - Imagem CSS extraída: css_img_3424269586483198564.gif
+2025-11-23 16:42:31,027 - html_processor - DEBUG - Arquivo salvo: components-design\images\img_3177139636542176797.jpeg
+2025-11-23 16:42:31,028 - html_processor - INFO - Imagens processadas: 1
+2025-11-23 16:42:31,031 - html_processor - INFO - === ETAPA 5: Otimização ===
+2025-11-23 16:42:38,286 - html_processor - INFO - CSS otimizado e minificado
+2025-11-23 16:42:38,318 - html_processor - INFO - === ETAPA 6: Geração de Saída ===
+2025-11-23 16:42:38,376 - html_processor - DEBUG - Arquivo salvo: components-design\styles\styles.css
+2025-11-23 16:42:38,929 - html_processor - INFO - HTML formatado em modo: beautify
+2025-11-23 16:42:38,944 - html_processor - DEBUG - Arquivo salvo: components-design/index.html
+2025-11-23 16:44:34,908 - html_processor - INFO - Diretórios criados: website
+2025-11-23 16:44:35,001 - html_processor - INFO - === ETAPA 1: Validação ===
+2025-11-23 16:44:35,079 - html_processor - INFO - Arquivo validado: Heroicons.html (1.49MB)
+2025-11-23 16:44:35,092 - html_processor - INFO - === ETAPA 2: Carregamento ===
+2025-11-23 16:44:35,549 - html_processor - INFO - === ETAPA 3: Limpeza ===
+2025-11-23 16:44:35,753 - html_processor - INFO - HTML limpo e normalizado
+2025-11-23 16:44:35,784 - html_processor - INFO - Conversão semântica: 1 tags convertidas
+2025-11-23 16:44:35,784 - html_processor - INFO - Head limpo e otimizado
+2025-11-23 16:44:35,784 - html_processor - INFO - === ETAPA 4: Extração de Recursos ===
+2025-11-23 16:44:35,853 - html_processor - INFO - CSS extraído: 8 regras
+2025-11-23 16:44:35,870 - html_processor - DEBUG - Arquivo salvo: website\images\css_img_-4604173792201940364.png
+2025-11-23 16:44:35,870 - html_processor - DEBUG - Imagem CSS extraída: css_img_-4604173792201940364.png
+2025-11-23 16:44:35,879 - html_processor - DEBUG - Arquivo salvo: website\images\css_img_6316381211712034190.gif
+2025-11-23 16:44:35,879 - html_processor - DEBUG - Imagem CSS extraída: css_img_6316381211712034190.gif
+2025-11-23 16:44:35,896 - html_processor - DEBUG - Arquivo salvo: website\images\img_2450040109393835647.jpeg
+2025-11-23 16:44:35,897 - html_processor - INFO - Imagens processadas: 1
+2025-11-23 16:44:35,992 - html_processor - INFO - === ETAPA 5: Otimização ===
+2025-11-23 16:44:41,833 - html_processor - INFO - CSS otimizado e minificado
+2025-11-23 16:44:41,835 - html_processor - INFO - === ETAPA 6: Geração de Saída ===
+2025-11-23 16:44:41,856 - html_processor - DEBUG - Arquivo salvo: website\styles\styles.css
+2025-11-23 16:44:42,324 - html_processor - INFO - HTML formatado em modo: beautify
+2025-11-23 16:44:42,334 - html_processor - DEBUG - Arquivo salvo: website/index.html
+2025-11-23 16:46:50,589 - html_processor - INFO - Diretórios criados: componetes
+2025-11-23 16:46:50,677 - html_processor - INFO - === ETAPA 1: Validação ===
+2025-11-23 16:46:50,779 - html_processor - INFO - Arquivo validado: sectionDesign.html (1.34MB)
+2025-11-23 16:46:50,779 - html_processor - INFO - === ETAPA 2: Carregamento ===
+2025-11-23 16:46:51,006 - html_processor - INFO - === ETAPA 3: Limpeza ===
+2025-11-23 16:46:51,038 - html_processor - INFO - HTML limpo e normalizado
+2025-11-23 16:46:51,092 - html_processor - INFO - Conversão semântica: 1 tags convertidas
+2025-11-23 16:46:51,104 - html_processor - INFO - Head limpo e otimizado
+2025-11-23 16:46:51,143 - html_processor - INFO - === ETAPA 4: Extração de Recursos ===
+2025-11-23 16:46:51,253 - html_processor - INFO - CSS extraído: 55 regras
+2025-11-23 16:46:51,381 - html_processor - DEBUG - Arquivo salvo: componetes\images\img_-208616461472782107.avif
+2025-11-23 16:46:51,421 - html_processor - DEBUG - Arquivo salvo: componetes\images\img_2478717559797319620.avif
+2025-11-23 16:46:51,421 - html_processor - INFO - Imagens processadas: 2
+2025-11-23 16:46:51,442 - html_processor - INFO - === ETAPA 5: Otimização ===
+2025-11-23 16:46:58,554 - html_processor - INFO - CSS otimizado e minificado
+2025-11-23 16:46:58,554 - html_processor - INFO - === ETAPA 6: Geração de Saída ===
+2025-11-23 16:46:58,554 - html_processor - DEBUG - Arquivo salvo: componetes\styles\styles.css
+2025-11-23 16:46:58,677 - html_processor - INFO - HTML formatado em modo: beautify
+2025-11-23 16:46:58,709 - html_processor - DEBUG - Arquivo salvo: componetes/index.html
