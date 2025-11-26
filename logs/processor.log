@@ -272,3 +272,118 @@
 2025-11-23 16:46:58,554 - html_processor - DEBUG - Arquivo salvo: componetes\styles\styles.css
 2025-11-23 16:46:58,677 - html_processor - INFO - HTML formatado em modo: beautify
 2025-11-23 16:46:58,709 - html_processor - DEBUG - Arquivo salvo: componetes/index.html
+2025-11-25 09:54:12,825 - html_processor - INFO - Diretórios criados: oilgas-website
+2025-11-25 09:54:12,829 - html_processor - INFO - === ETAPA 1: Validação ===
+2025-11-25 09:54:12,968 - html_processor - INFO - Arquivo validado: oilgas-prototipo.html (5.57MB)
+2025-11-25 09:54:12,973 - html_processor - INFO - === ETAPA 2: Carregamento ===
+2025-11-25 09:54:13,555 - html_processor - INFO - === ETAPA 3: Limpeza ===
+2025-11-25 09:54:13,641 - html_processor - INFO - HTML limpo e normalizado
+2025-11-25 09:54:13,650 - html_processor - INFO - Conversão semântica: 10 tags convertidas
+2025-11-25 09:54:13,652 - html_processor - INFO - Head limpo e otimizado
+2025-11-25 09:54:13,653 - html_processor - INFO - === ETAPA 4: Extração de Recursos ===
+2025-11-25 09:54:13,697 - html_processor - INFO - CSS extraído: 43 regras
+2025-11-25 09:54:14,040 - html_processor - DEBUG - Arquivo salvo: oilgas-website\images\css_img_-7919679411793290818.jpeg
+2025-11-25 09:54:14,040 - html_processor - DEBUG - Imagem CSS extraída: css_img_-7919679411793290818.jpeg
+2025-11-25 09:54:14,187 - html_processor - DEBUG - Arquivo salvo: oilgas-website\images\css_img_3566610309999757653.jpeg
+2025-11-25 09:54:14,187 - html_processor - DEBUG - Imagem CSS extraída: css_img_3566610309999757653.jpeg
+2025-11-25 09:54:14,229 - html_processor - DEBUG - Arquivo salvo: oilgas-website\images\css_img_3495692613321098839.jpeg
+2025-11-25 09:54:14,230 - html_processor - DEBUG - Imagem CSS extraída: css_img_3495692613321098839.jpeg
+2025-11-25 09:54:14,234 - html_processor - DEBUG - Arquivo salvo: oilgas-website\images\css_img_6489053694552356951.png
+2025-11-25 09:54:14,235 - html_processor - DEBUG - Imagem CSS extraída: css_img_6489053694552356951.png
+2025-11-25 09:54:14,240 - html_processor - DEBUG - Arquivo salvo: oilgas-website\images\css_img_591120803983136209.gif
+2025-11-25 09:54:14,240 - html_processor - DEBUG - Imagem CSS extraída: css_img_591120803983136209.gif
+2025-11-25 09:54:14,256 - html_processor - DEBUG - Arquivo salvo: oilgas-website\images\img_-6592018153375295927.png
+2025-11-25 09:54:14,259 - html_processor - DEBUG - Arquivo salvo: oilgas-website\images\img_1847355489854620381.png
+2025-11-25 09:54:14,262 - html_processor - DEBUG - Arquivo salvo: oilgas-website\images\img_-171089101933622468.jpeg
+2025-11-25 09:54:14,448 - html_processor - DEBUG - Arquivo salvo: oilgas-website\images\img_129616299317213001.png
+2025-11-25 09:54:14,483 - html_processor - DEBUG - Arquivo salvo: oilgas-website\images\img_1597816226288339071.png
+2025-11-25 09:54:14,487 - html_processor - DEBUG - Arquivo salvo: oilgas-website\images\img_-3969576202990226930.jpeg
+2025-11-25 09:54:14,490 - html_processor - DEBUG - Arquivo salvo: oilgas-website\images\img_-8813795622932456898.png
+2025-11-25 09:54:14,492 - html_processor - DEBUG - Arquivo salvo: oilgas-website\images\img_-3013570376073117879.jpeg
+2025-11-25 09:54:14,496 - html_processor - DEBUG - Arquivo salvo: oilgas-website\images\img_6374443157342422504.png
+2025-11-25 09:54:14,499 - html_processor - DEBUG - Arquivo salvo: oilgas-website\images\img_4264566909906465638.png
+2025-11-25 09:54:14,506 - html_processor - DEBUG - Arquivo salvo: oilgas-website\images\img_3892872639347641514.png
+2025-11-25 09:54:14,511 - html_processor - DEBUG - Arquivo salvo: oilgas-website\images\img_-1339714860958190371.jpeg
+2025-11-25 09:54:14,514 - html_processor - DEBUG - Arquivo salvo: oilgas-website\images\img_2011814434101018925.png
+2025-11-25 09:54:14,514 - html_processor - DEBUG - Arquivo salvo: oilgas-website\images\img_432545330868928365.jpeg
+2025-11-25 09:54:14,519 - html_processor - DEBUG - Arquivo salvo: oilgas-website\images\img_-1696188701095211377.jpeg
+2025-11-25 09:54:14,521 - html_processor - DEBUG - Arquivo salvo: oilgas-website\images\img_1847355489854620381.png
+2025-11-25 09:54:14,521 - html_processor - DEBUG - Arquivo salvo: oilgas-website\images\img_-6592018153375295927.png
+2025-11-25 09:54:14,521 - html_processor - INFO - Imagens processadas: 17
+2025-11-25 09:54:14,709 - html_processor - INFO - === ETAPA 5: Otimização ===
+2025-11-25 09:54:50,658 - html_processor - INFO - CSS otimizado e minificado
+2025-11-25 09:54:50,661 - html_processor - INFO - === ETAPA 6: Geração de Saída ===
+2025-11-25 09:54:50,672 - html_processor - DEBUG - Arquivo salvo: oilgas-website\styles\styles.css
+2025-11-25 09:54:51,590 - html_processor - INFO - HTML formatado em modo: beautify
+2025-11-25 09:54:51,802 - html_processor - DEBUG - Arquivo salvo: oilgas-website/index.html
+2025-11-25 10:17:26,997 - html_processor - INFO - Diretórios criados: oilgas-website2
+2025-11-25 10:17:27,019 - html_processor - INFO - === ETAPA 1: Validação ===
+2025-11-25 10:17:27,173 - html_processor - INFO - Arquivo validado: oilgas-2.html (4.09MB)
+2025-11-25 10:17:27,175 - html_processor - INFO - === ETAPA 2: Carregamento ===
+2025-11-25 10:17:27,838 - html_processor - INFO - === ETAPA 3: Limpeza ===
+2025-11-25 10:17:27,950 - html_processor - INFO - HTML limpo e normalizado
+2025-11-25 10:17:27,966 - html_processor - INFO - Conversão semântica: 9 tags convertidas
+2025-11-25 10:17:27,967 - html_processor - INFO - Head limpo e otimizado
+2025-11-25 10:17:28,032 - html_processor - INFO - === ETAPA 4: Extração de Recursos ===
+2025-11-25 10:17:28,133 - html_processor - INFO - CSS extraído: 45 regras
+2025-11-25 10:17:28,187 - html_processor - DEBUG - Arquivo salvo: oilgas-website2\images\css_img_-4797578259533965039.png
+2025-11-25 10:17:28,187 - html_processor - DEBUG - Imagem CSS extraída: css_img_-4797578259533965039.png
+2025-11-25 10:17:28,239 - html_processor - DEBUG - Arquivo salvo: oilgas-website2\images\css_img_9151487464918500711.gif
+2025-11-25 10:17:28,239 - html_processor - DEBUG - Imagem CSS extraída: css_img_9151487464918500711.gif
+2025-11-25 10:17:28,252 - html_processor - INFO - Imagens processadas: 0
+2025-11-25 10:17:28,345 - html_processor - INFO - === ETAPA 5: Otimização ===
+2025-11-25 10:17:58,669 - html_processor - INFO - CSS otimizado e minificado
+2025-11-25 10:17:58,672 - html_processor - INFO - === ETAPA 6: Geração de Saída ===
+2025-11-25 10:17:58,716 - html_processor - DEBUG - Arquivo salvo: oilgas-website2\styles\styles.css
+2025-11-25 10:17:59,340 - html_processor - INFO - HTML formatado em modo: beautify
+2025-11-25 10:17:59,377 - html_processor - DEBUG - Arquivo salvo: oilgas-website2/index.html
+2025-11-25 11:08:57,511 - html_processor - INFO - Diretórios criados: htmlWind
+2025-11-25 11:08:57,526 - html_processor - INFO - === ETAPA 1: Validação ===
+2025-11-25 11:08:57,650 - html_processor - INFO - Arquivo validado: Htmlwind.html (1.49MB)
+2025-11-25 11:08:57,650 - html_processor - INFO - === ETAPA 2: Carregamento ===
+2025-11-25 11:08:57,939 - html_processor - INFO - === ETAPA 3: Limpeza ===
+2025-11-25 11:08:58,049 - html_processor - INFO - HTML limpo e normalizado
+2025-11-25 11:08:58,049 - html_processor - INFO - Conversão semântica: 10 tags convertidas
+2025-11-25 11:08:58,049 - html_processor - INFO - Head limpo e otimizado
+2025-11-25 11:08:58,049 - html_processor - INFO - === ETAPA 4: Extração de Recursos ===
+2025-11-25 11:08:58,118 - html_processor - INFO - CSS extraído: 13 regras
+2025-11-25 11:08:58,168 - html_processor - DEBUG - Arquivo salvo: htmlWind\images\css_img_1898087039134825199.png
+2025-11-25 11:08:58,168 - html_processor - DEBUG - Imagem CSS extraída: css_img_1898087039134825199.png
+2025-11-25 11:08:58,196 - html_processor - DEBUG - Arquivo salvo: htmlWind\images\css_img_-4054996288813383602.gif
+2025-11-25 11:08:58,196 - html_processor - DEBUG - Imagem CSS extraída: css_img_-4054996288813383602.gif
+2025-11-25 11:08:58,204 - html_processor - DEBUG - Arquivo salvo: htmlWind\images\img_-5824489657638235047.png
+2025-11-25 11:08:58,206 - html_processor - DEBUG - Arquivo salvo: htmlWind\images\img_-5824489657638235047.png
+2025-11-25 11:08:58,207 - html_processor - DEBUG - Arquivo salvo: htmlWind\images\img_-5824489657638235047.png
+2025-11-25 11:08:58,208 - html_processor - DEBUG - Arquivo salvo: htmlWind\images\img_-5824489657638235047.png
+2025-11-25 11:08:58,210 - html_processor - DEBUG - Arquivo salvo: htmlWind\images\img_-5824489657638235047.png
+2025-11-25 11:08:58,211 - html_processor - DEBUG - Arquivo salvo: htmlWind\images\img_-5824489657638235047.png
+2025-11-25 11:08:58,259 - html_processor - DEBUG - Arquivo salvo: htmlWind\images\img_-5824489657638235047.png
+2025-11-25 11:08:58,263 - html_processor - DEBUG - Arquivo salvo: htmlWind\images\img_-4620836067255090802.avif
+2025-11-25 11:08:58,268 - html_processor - DEBUG - Arquivo salvo: htmlWind\images\img_-5178856341180209738.avif
+2025-11-25 11:08:58,272 - html_processor - DEBUG - Arquivo salvo: htmlWind\images\img_2513631499786376358.avif
+2025-11-25 11:08:58,275 - html_processor - DEBUG - Arquivo salvo: htmlWind\images\img_-8440511476018380724.avif
+2025-11-25 11:08:58,278 - html_processor - DEBUG - Arquivo salvo: htmlWind\images\img_7231519293616358647.avif
+2025-11-25 11:08:58,279 - html_processor - WARNING - Erro ao decodificar base64: Invalid base64-encoded string: number of data characters (345) cannot be 1 more than a multiple of 4
+2025-11-25 11:08:58,319 - html_processor - DEBUG - Arquivo salvo: htmlWind\images\img_8824853232870830620.webp
+2025-11-25 11:08:58,329 - html_processor - DEBUG - Arquivo salvo: htmlWind\images\img_-3908095258079359039.webp
+2025-11-25 11:08:58,333 - html_processor - DEBUG - Arquivo salvo: htmlWind\images\img_-2740764711252253915.webp
+2025-11-25 11:08:58,333 - html_processor - DEBUG - Arquivo salvo: htmlWind\images\img_-8211654131375556818.webp
+2025-11-25 11:08:58,333 - html_processor - DEBUG - Arquivo salvo: htmlWind\images\img_-8813970595313742530.webp
+2025-11-25 11:08:58,333 - html_processor - DEBUG - Arquivo salvo: htmlWind\images\img_6239892695335758261.webp
+2025-11-25 11:08:58,351 - html_processor - DEBUG - Arquivo salvo: htmlWind\images\img_1603239122593221037.webp
+2025-11-25 11:08:58,351 - html_processor - DEBUG - Arquivo salvo: htmlWind\images\img_-7248326292444024493.webp
+2025-11-25 11:08:58,351 - html_processor - DEBUG - Arquivo salvo: htmlWind\images\img_6348915823248542799.webp
+2025-11-25 11:08:58,351 - html_processor - DEBUG - Arquivo salvo: htmlWind\images\img_7115015532810318356.webp
+2025-11-25 11:08:58,369 - html_processor - DEBUG - Arquivo salvo: htmlWind\images\img_8191681999903687542.webp
+2025-11-25 11:08:58,372 - html_processor - DEBUG - Arquivo salvo: htmlWind\images\img_8027889794600606662.webp
+2025-11-25 11:08:58,375 - html_processor - DEBUG - Arquivo salvo: htmlWind\images\img_4439739764334605781.webp
+2025-11-25 11:08:58,377 - html_processor - DEBUG - Arquivo salvo: htmlWind\images\img_-7433785152793354485.webp
+2025-11-25 11:08:58,379 - html_processor - DEBUG - Arquivo salvo: htmlWind\images\img_7340261328616431301.webp
+2025-11-25 11:08:58,386 - html_processor - DEBUG - Arquivo salvo: htmlWind\images\img_-3409185218874357678.jpeg
+2025-11-25 11:08:58,386 - html_processor - INFO - Imagens processadas: 28
+2025-11-25 11:08:58,392 - html_processor - INFO - === ETAPA 5: Otimização ===
+2025-11-25 11:09:06,367 - html_processor - INFO - CSS otimizado e minificado
+2025-11-25 11:09:06,382 - html_processor - INFO - === ETAPA 6: Geração de Saída ===
+2025-11-25 11:09:06,418 - html_processor - DEBUG - Arquivo salvo: htmlWind\styles\styles.css
+2025-11-25 11:09:06,677 - html_processor - INFO - HTML formatado em modo: beautify
+2025-11-25 11:09:06,708 - html_processor - DEBUG - Arquivo salvo: htmlWind/index.html
