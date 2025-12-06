@@ -4632,3 +4632,37 @@
 2025-11-27 10:00:11,980 - html_processor - DEBUG - Arquivo salvo: geradorIconImg\styles\styles.css
 2025-11-27 10:00:13,946 - html_processor - INFO - HTML formatado em modo: beautify
 2025-11-27 10:00:14,114 - html_processor - DEBUG - Arquivo salvo: geradorIconImg/index.html
+2025-12-06 10:00:33,776 - html_processor - INFO - Diretórios criados: webaapp-nucleo
+2025-12-06 10:00:33,784 - html_processor - INFO - === ETAPA 1: Validação ===
+2025-12-06 10:00:33,967 - html_processor - INFO - Arquivo validado: Webapp-nucleo.html (0.41MB)
+2025-12-06 10:00:33,968 - html_processor - INFO - === ETAPA 2: Carregamento ===
+2025-12-06 10:00:34,193 - html_processor - INFO - === ETAPA 3: Limpeza ===
+2025-12-06 10:00:34,293 - html_processor - INFO - HTML limpo e normalizado
+2025-12-06 10:00:34,303 - html_processor - INFO - Conversão semântica: 59 tags convertidas
+2025-12-06 10:00:34,304 - html_processor - INFO - Head limpo e otimizado
+2025-12-06 10:00:34,333 - html_processor - INFO - === ETAPA 4: Extração de Recursos ===
+2025-12-06 10:00:34,426 - html_processor - INFO - CSS extraído: 24 regras
+2025-12-06 10:00:34,576 - html_processor - INFO - Imagens processadas: 0
+2025-12-06 10:00:34,581 - html_processor - INFO - === ETAPA 5: Otimização ===
+2025-12-06 10:00:36,678 - html_processor - INFO - CSS otimizado e minificado
+2025-12-06 10:00:36,681 - html_processor - INFO - === ETAPA 6: Geração de Saída ===
+2025-12-06 10:00:36,683 - html_processor - DEBUG - Arquivo salvo: webaapp-nucleo\styles\styles.css
+2025-12-06 10:00:36,993 - html_processor - INFO - HTML formatado em modo: beautify
+2025-12-06 10:00:36,999 - html_processor - DEBUG - Arquivo salvo: webaapp-nucleo/index.html
+2025-12-06 11:09:08,665 - html_processor - INFO - Diretórios criados: nucleo-popcard
+2025-12-06 11:09:08,708 - html_processor - INFO - === ETAPA 1: Validação ===
+2025-12-06 11:09:08,923 - html_processor - INFO - Arquivo validado: pop-nucleo.html (0.35MB)
+2025-12-06 11:09:08,934 - html_processor - INFO - === ETAPA 2: Carregamento ===
+2025-12-06 11:09:09,130 - html_processor - INFO - === ETAPA 3: Limpeza ===
+2025-12-06 11:09:09,194 - html_processor - INFO - HTML limpo e normalizado
+2025-12-06 11:09:09,210 - html_processor - INFO - Conversão semântica: 5 tags convertidas
+2025-12-06 11:09:09,215 - html_processor - INFO - Head limpo e otimizado
+2025-12-06 11:09:09,221 - html_processor - INFO - === ETAPA 4: Extração de Recursos ===
+2025-12-06 11:09:09,298 - html_processor - INFO - CSS extraído: 21 regras
+2025-12-06 11:09:09,414 - html_processor - INFO - Imagens processadas: 0
+2025-12-06 11:09:09,508 - html_processor - INFO - === ETAPA 5: Otimização ===
+2025-12-06 11:09:12,247 - html_processor - INFO - CSS otimizado e minificado
+2025-12-06 11:09:12,348 - html_processor - INFO - === ETAPA 6: Geração de Saída ===
+2025-12-06 11:09:12,589 - html_processor - DEBUG - Arquivo salvo: nucleo-popcard\styles\styles.css
+2025-12-06 11:09:13,020 - html_processor - INFO - HTML formatado em modo: beautify
+2025-12-06 11:09:13,181 - html_processor - DEBUG - Arquivo salvo: nucleo-popcard/index.html

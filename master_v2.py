@@ -33,7 +33,7 @@ CONFIG = {
     'MAX_FILE_SIZE_MB': int(os.getenv('MAX_FILE_SIZE_MB', 10)),
     'MAX_IMAGE_SIZE_MB': int(os.getenv('MAX_IMAGE_SIZE_MB', 5)),
     'REQUEST_TIMEOUT': int(os.getenv('REQUEST_TIMEOUT', 10)),
-    'OUTPUT_DIR': os.getenv('OUTPUT_DIR', 'geradorIcon'),
+    'OUTPUT_DIR': os.getenv('OUTPUT_DIR', 'nucleo-popcard'),
 }
 
 OUT_DIR = CONFIG['OUTPUT_DIR']
@@ -286,7 +286,6 @@ def clean_head(soup: BeautifulSoup) -> BeautifulSoup:
     title.string = title.string or "Projeto"
     
     # Preservar meta importantes
-    charset_meta = head.find("meta", charset=True)
     viewport_meta = head.find("meta", attrs={"name": "viewport"})
     description_meta = head.find("meta", attrs={"name": "description"})
     

@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon Editor - Sistema de Estado</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'background': '#ffffff',
+                        'background-light': '#f8f9fa',
+                        'contrast-high': '#1a1a1a',
+                        'contrast-medium': '#666666',
+                        'contrast-low': '#999999',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes popoverAppear {
+            from { transform: scale(0.95); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        .animate-popover { animation: popoverAppear 0.2s ease-out forwards; }
+
+        .checkerboard {
+            background-image: repeating-conic-gradient(#fff 0% 25%, rgba(26, 26, 26, 0.075) 0% 50%);
+            background-position: 50% 50%;
+            background-size: 16px 16px;
+        }
+
+        .checkerboard-small {
+            background-image: repeating-conic-gradient(#fff 0% 25%, rgba(26, 26, 26, 0.075) 0% 50%);
+            background-position: 50% 50%;
+            background-size: 8px 8px;
+        }
+
+        .draggable-header { cursor: move; user-select: none; }
+        .draggable-header:active { cursor: grabbing; }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-100 flex items-center justify-center p-4">
+    
+    <!-- Icon Editor Popover -->
+    <footer id="iconEditor" class="relative z-10 bg-background-light/95 backdrop-blur-[10px] p-4 pt-0 rounded-xl w-full max-w-[692px] 
+                   shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_10px_10px_-5px_rgba(0,0,0,0.04),inset_0_0.5px_0_rgba(255,255,255,0.2),inset_0_0_0_0.5px_rgba(255,255,255,0.125),0_0_0_0.5px_rgba(0,0,0,0.075)]
+                   animate-popover
+                   max-[708px]:max-w-[21.5rem] max-[708px]:ml-auto max-[708px]:mr-2">
+        
+        <!-- Header -->
+        <header class="draggable-header flex items-start justify-between pt-4 pb-2.5">
+            <h3 id="iconTitle" class="text-lg leading-none whitespace-nowrap overflow-hidden text-ellipsis pr-2 cursor-text select-text text-contrast-high">
+                whatsapp
+            </h3>
+            <div class="flex gap-1.5 -mt-[2px]">
+                <!-- Reset Button -->
+                <button id="resetBtn" aria-label="Reset" 
+                        class="text-contrast-high bg-contrast-high/10 size-6 flex rounded-full items-center justify-center shrink-0 hover:bg-contrast-high/12.5 focus-visible:outline focus-visible:outline-[1.5px] focus-visible:outline-contrast-high focus-visible:outline-offset-[1.5px] active:bg-contrast-high/20 transition-all">
+                    <svg class="shrink-0" fill="none" height="12" viewBox="0 0 12 12" width="12">
+                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                            <path d="m1.282,3.694C2.136,1.951,3.928.75,6,.75c2.899,0,5.25,2.351,5.25,5.25"></path>
+                            <polyline points="4.25 3.75 1.25 3.75 1.25 .75"></polyline>
+                            <circle cx="6" cy="11.25" fill="currentColor" r=".75" stroke-width="0"></circle>
+                            <circle cx="3.375" cy="10.547" fill="currentColor" r=".75" stroke-width="0"></circle>
+                            <circle cx="1.453" cy="8.625" fill="currentColor" r=".75" stroke-width="0"></circle>
+                            <circle cx="8.625" cy="10.547" fill="currentColor" r=".75" stroke-width="0"></circle>
+                            <circle cx="10.547" cy="8.625" fill="currentColor" r=".75" stroke-width="0"></circle>
+                        </g>
+                    </svg>
+                </button>
+                <!-- Close Button -->
+                <button id="closeBtn" aria-label="Close editor" 
+                        class="text-contrast-high bg-contrast-high/10 size-6 flex rounded-full items-center justify-center shrink-0 hover:bg-contrast-high/12.5 focus-visible:outline focus-visible:outline-[1.5px] focus-visible:outline-contrast-high focus-visible:outline-offset-[1.5px] transition-all">
+                    <svg class="shrink-0" fill="none" height="12" viewBox="0 0 12 12" width="12">
+                        <path d="M2.25 9.75L9.75 2.25" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                        <path d="M9.75 9.75L2.25 2.25" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- Content Grid -->
+        <div class="grid grid-cols-[172px_1fr] gap-4 max-[708px]:grid-cols-1">
+            
+            <!-- Icon Preview -->
+            <div class="relative overflow-hidden checkerboard rounded-md w-full aspect-square max-[708px]:max-w-32">
+                <div id="iconPreview" class="size-full flex items-center justify-center" style="background-color: #ffffff;">
+                    <!-- SVG será injetado aqui dinamicamente -->
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="flex flex-col justify-between gap-4 max-[708px]:justify-normal">
+                
+                <!-- Size, Padding, Rotate, Flip -->
+                <div class="flex gap-2 flex-wrap relative z-30">
+                    <!-- Size -->
+                    <div class="flex flex-col gap-1.5">
+                        <label class="text-xs text-contrast-low w-fit leading-none" for="sizeInput">Size</label>
+                        <div class="relative">
+                            <input id="sizeInput" class="h-8 w-18 px-2.5 pr-[30px] bg-white border border-black/10 rounded-md text-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all" 
+                                   type="number" 
+                                   value="32"
+                                   min="16"
+                                   max="512" />
+                            <span class="text-xs text-contrast-low pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2">px</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Padding -->
+                    <div class="flex flex-col gap-1.5">
+                        <label class="text-xs text-contrast-low w-fit leading-none" for="paddingInput">Padding</label>
+                        <div class="relative">
+                            <input id="paddingInput" class="h-8 w-18 px-2.5 pr-[30px] bg-white border border-black/10 rounded-md text-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all" 
+                                   type="number" 
+                                   value="0"
+                                   min="0"
+                                   max="100" />
+                            <span class="text-xs text-contrast-low pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2">px</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Rotate -->
+                    <div class="flex flex-col gap-1.5">
+                        <label class="text-xs text-contrast-low w-fit leading-none" for="rotateInput">Rotate</label>
+                        <div class="relative">
+                            <input id="rotateInput" class="h-8 w-18 px-2.5 pr-[30px] bg-white border border-black/10 rounded-md text-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all" 
+                                   type="number" 
+                                   value="0"
+                                   min="-360"
+                                   max="360" />
+                            <span class="text-xs text-contrast-low pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2">deg</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Flip -->
+                    <div class="flex flex-col gap-1.5">
+                        <p class="text-xs text-contrast-low w-fit leading-none cursor-default">Flip</p>
+                        <div class="flex gap-2">
+                            <!-- Flip Horizontal -->
+                            <label class="size-8 flex rounded-md bg-contrast-high/10 hover:bg-contrast-high/12.5 text-contrast-high has-[:checked]:bg-contrast-high has-[:checked]:text-white cursor-pointer transition-all" 
+                                   for="flipHorizontal">
+                                <input id="flipHorizontal" class="sr-only" type="checkbox" />
+                                <svg class="shrink-0 m-auto" height="18" viewBox="0 0 18 18" width="18">
+                                    <g fill="currentColor">
+                                        <g opacity="0.5">
+                                            <circle cx="9" cy="2.75" r=".75"></circle>
+                                            <circle cx="9" cy="5.875" r=".75"></circle>
+                                            <circle cx="9" cy="9" r=".75"></circle>
+                                            <circle cx="9" cy="12.125" r=".75"></circle>
+                                            <circle cx="9" cy="15.25" r=".75"></circle>
+                                        </g>
+                                        <path d="M3.084 4.93709C2.712 4.60409 2.197 4.52409 1.74 4.72709C1.284 4.93109 1 5.36809 1 5.86809V12.1321C1 12.6321 1.284 13.0701 1.74 13.2731C1.907 13.3481 2.082 13.3841 2.255 13.3841C2.555 13.3841 2.848 13.2741 3.083 13.0631L6.585 9.93109C6.849 9.69409 7 9.35509 7 9.00009C7 8.64509 6.849 8.30609 6.584 8.06809L3.084 4.93709Z"></path>
+                                        <path d="M16.26 4.72701C15.803 4.52201 15.289 4.60301 14.916 4.93701L11.415 8.06901C11.151 8.30601 11 8.64501 11 9.00001C11 9.35501 11.151 9.69401 11.416 9.93201L14.916 13.063C15.152 13.274 15.445 13.384 15.745 13.384C15.918 13.384 16.093 13.347 16.26 13.273C16.716 13.069 17 12.632 17 12.132V5.86801C17 5.36801 16.716 4.93001 16.26 4.72701Z"></path>
+                                    </g>
+                                </svg>
+                            </label>
+                            
+                            <!-- Flip Vertical -->
+                            <label class="size-8 flex rounded-md bg-contrast-high/10 hover:bg-contrast-high/12.5 text-contrast-high has-[:checked]:bg-contrast-high has-[:checked]:text-white cursor-pointer transition-all" 
+                                   for="flipVertical">
+                                <input id="flipVertical" class="sr-only" type="checkbox" />
+                                <svg class="shrink-0 m-auto rotate-90" height="18" viewBox="0 0 18 18" width="18">
+                                    <g fill="currentColor">
+                                        <g opacity="0.5">
+                                            <circle cx="9" cy="2.75" r=".75"></circle>
+                                            <circle cx="9" cy="5.875" r=".75"></circle>
+                                            <circle cx="9" cy="9" r=".75"></circle>
+                                            <circle cx="9" cy="12.125" r=".75"></circle>
+                                            <circle cx="9" cy="15.25" r=".75"></circle>
+                                        </g>
+                                        <path d="M3.084 4.93709C2.712 4.60409 2.197 4.52409 1.74 4.72709C1.284 4.93109 1 5.36809 1 5.86809V12.1321C1 12.6321 1.284 13.0701 1.74 13.2731C1.907 13.3481 2.082 13.3841 2.255 13.3841C2.555 13.3841 2.848 13.2741 3.083 13.0631L6.585 9.93109C6.849 9.69409 7 9.35509 7 9.00009C7 8.64509 6.849 8.30609 6.584 8.06809L3.084 4.93709Z"></path>
+                                        <path d="M16.26 4.72701C15.803 4.52201 15.289 4.60301 14.916 4.93701L11.415 8.06901C11.151 8.30601 11 8.64501 11 9.00001C11 9.35501 11.151 9.69401 11.416 9.93201L14.916 13.063C15.152 13.274 15.445 13.384 15.745 13.384C15.918 13.384 16.093 13.347 16.26 13.273C16.716 13.069 17 12.632 17 12.132V5.86801C17 5.36801 16.716 4.93001 16.26 4.72701Z"></path>
+                                    </g>
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Background and Colors -->
+                <div class="flex gap-2 flex-wrap">
+                    <!-- Background Color -->
+                    <div class="flex flex-col gap-1.5">
+                        <p class="text-xs text-contrast-low w-fit leading-none cursor-default">Bg</p>
+                        <div class="relative size-8 rounded-md checkerboard-small shadow-sm hover:shadow-md transition-shadow">
+                            <input id="bgColorInput" type="color" value="#ffffff"
+                                   class="w-full h-full rounded-md border-2 border-white shadow-inner cursor-pointer" />
+                        </div>
+                    </div>
+                    
+                    <!-- Icon Colors -->
+                    <div class="flex flex-col gap-1.5">
+                        <div class="flex items-center gap-2">
+                            <p class="text-xs text-contrast-low leading-none cursor-default">Colors</p>
+                            <!-- CurrentColor Checkbox -->
+                            <label class="inline-flex items-center gap-1.5 text-xs text-contrast-low hover:text-contrast-medium cursor-pointer has-[:checked]:text-contrast-high transition-colors">
+                                <input id="currentColorCheckbox" class="sr-only peer" type="checkbox" />
+                                <span class="flex size-3 rounded-sm bg-white border border-contrast-high/15 peer-hover:border-contrast-high/20 peer-checked:bg-contrast-high peer-checked:border-contrast-high peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-contrast-high peer-focus-visible:outline-offset-2 transition-all">
+                                    <svg class="shrink-0 m-auto text-white hidden peer-checked:block" fill="none" height="10" viewBox="0 0 10 10" width="10">
+                                        <path d="M2.18359 5.625L4.06234 7.5L7.81609 2.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                    </svg>
+                                </span>
+                                currentColor
+                            </label>
+                        </div>
+                        <div class="flex gap-2">
+                            <!-- Primary Color -->
+                            <div id="primaryColorWrapper" class="relative size-8 rounded-md checkerboard-small shadow-sm hover:shadow-md transition-shadow">
+                                <input id="primaryColorInput" type="color" value="#1a1a1a"
+                                       class="w-full h-full rounded-md border-2 border-white shadow-inner cursor-pointer" />
+                            </div>
+                            <!-- Add Secondary Color Button -->
+                            <button id="addSecondaryBtn" class="size-8 flex items-center justify-center rounded-md bg-contrast-high/10 text-contrast-high hover:bg-contrast-high/12.5 focus:outline focus:outline-2 focus:outline-contrast-high focus:outline-offset-2 transition-all active:translate-y-px">
+                                <svg class="shrink-0" height="12" viewBox="0 0 12 12" width="12">
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                                        <line x1="10.75" x2="1.25" y1="6" y2="6"></line>
+                                        <line x1="6" x2="6" y1="10.75" y2="1.25"></line>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Export Section -->
+                <div class="flex gap-2 flex-wrap items-end max-[708px]:flex-col">
+                    <div class="flex flex-col gap-1.5 max-[708px]:w-full">
+                        <p class="text-xs text-contrast-low w-fit leading-none cursor-default">Export</p>
+                        <div class="h-8 w-[232px] flex items-center rounded-md bg-background-light border border-black/10 overflow-hidden max-[708px]:w-full">
+                            <select id="actionSelect" class="flex-1 px-2.5 h-full border-none bg-transparent text-sm focus:outline-none">
+                                <option value="copy">Copy as</option>
+                                <option value="download">Download as</option>
+                            </select>
+                            <div class="w-px h-8 bg-black/10"></div>
+                            <select id="formatSelect" class="flex-1 px-2.5 h-full border-none bg-transparent text-sm focus:outline-none">
+                                <option value="svg">SVG</option>
+                                <option value="tsx">TSX</option>
+                                <option value="react">React</option>
+                                <option value="png">PNG</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2 max-[708px]:w-full">
+                        <button id="exportBtn" class="group flex items-center justify-between gap-2 px-4 h-8 bg-contrast-high text-white rounded-md hover:opacity-90 focus:outline focus:outline-2 focus:outline-contrast-high focus:outline-offset-2 transition-all active:translate-y-px max-[708px]:flex-1">
+                            <span id="exportBtnText" class="text-sm font-medium">Copy</span>
+                            <svg class="shrink-0" height="18" viewBox="0 0 18 18" width="18">
+                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                                    <path d="M5.75 12.25H4.25C3.1454 12.25 2.25 11.3546 2.25 10.25V4.25C2.25 3.1454 3.1454 2.25 4.25 2.25H10.25C11.3546 2.25 12.25 3.1454 12.25 4.25V5.75"></path>
+                                    <path d="M13.75 5.75H7.75C6.64543 5.75 5.75 6.64543 5.75 7.75V13.75C5.75 14.8546 6.64543 15.75 7.75 15.75H13.75C14.8546 15.75 15.75 14.8546 15.75 13.75V7.75C15.75 6.64543 14.8546 5.75 13.75 5.75Z"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Estado Atual (Debug - pode remover) -->
+        <div class="mt-4 p-3 bg-white/50 rounded-lg text-xs max-[708px]:hidden">
+            <p class="font-semibold mb-1 text-contrast-high">Código:</p>
+            <pre id="stateDebug" class="text-contrast-medium overflow-auto"></pre>
+        </div>
+    </footer>
+
+    <script>
+        // 🎯 SISTEMA DE ESTADO COMPLETO
+        class IconEditor {
+            constructor() {
+                // Estado inicial
+                this.state = {
+                    name: 'whatsapp',
+                    size: 32,
+                    padding: 0,
+                    rotation: 0,
+                    flipH: false,
+                    flipV: false,
+                    bgColor: '#ffffff',
+                    primaryColor: '#1a1a1a',
+                    secondaryColor: null,
+                    useCurrentColor: false,
+                    svgOriginal: `<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><path d="M25.873,6.069c-2.619-2.623-6.103-4.067-9.814-4.069C8.411,2,2.186,8.224,2.184,15.874c-.001,2.446,.638,4.833,1.852,6.936l-1.969,7.19,7.355-1.929c2.026,1.106,4.308,1.688,6.63,1.689h.006c7.647,0,13.872-6.224,13.874-13.874,.001-3.708-1.44-7.193-4.06-9.815h0Zm-9.814,21.347h-.005c-2.069,0-4.099-.557-5.87-1.607l-.421-.25-4.365,1.145,1.165-4.256-.274-.436c-1.154-1.836-1.764-3.958-1.763-6.137,.003-6.358,5.176-11.531,11.537-11.531,3.08,.001,5.975,1.202,8.153,3.382,2.177,2.179,3.376,5.077,3.374,8.158-.003,6.359-5.176,11.532-11.532,11.532h0Zm6.325-8.636c-.347-.174-2.051-1.012-2.369-1.128-.318-.116-.549-.174-.78,.174-.231,.347-.895,1.128-1.098,1.359-.202,.232-.405,.26-.751,.086-.347-.174-1.464-.54-2.788-1.72-1.03-.919-1.726-2.054-1.929-2.402-.202-.347-.021-.535,.152-.707,.156-.156,.347-.405,.52-.607,.174-.202,.231-.347,.347-.578,.116-.232,.058-.434-.029-.607-.087-.174-.78-1.88-1.069-2.574-.281-.676-.567-.584-.78-.595-.202-.01-.433-.012-.665-.012s-.607,.086-.925,.434c-.318,.347-1.213,1.186-1.213,2.892s1.242,3.355,1.416,3.587c.174,.232,2.445,3.733,5.922,5.235,.827,.357,1.473,.571,1.977,.73,.83,.264,1.586,.227,2.183,.138,.666-.1,2.051-.839,2.34-1.649,.289-.81,.289-1.504,.202-1.649s-.318-.232-.665-.405h0Z" fill-rule="evenodd"></path></g></svg>`
+                };
+
+                this.initElements();
+                this.initEventListeners();
+                this.render();
+            }
+
+            // Inicializar referências dos elementos
+            initElements() {
+                this.els = {
+                    preview: document.getElementById('iconPreview'),
+                    title: document.getElementById('iconTitle'),
+                    sizeInput: document.getElementById('sizeInput'),
+                    paddingInput: document.getElementById('paddingInput'),
+                    rotateInput: document.getElementById('rotateInput'),
+                    flipH: document.getElementById('flipHorizontal'),
+                    flipV: document.getElementById('flipVertical'),
+                    bgColor: document.getElementById('bgColorInput'),
+                    primaryColor: document.getElementById('primaryColorInput'),
+                    currentColor: document.getElementById('currentColorCheckbox'),
+                    primaryWrapper: document.getElementById('primaryColorWrapper'),
+                    resetBtn: document.getElementById('resetBtn'),
+                    closeBtn: document.getElementById('closeBtn'),
+                    actionSelect: document.getElementById('actionSelect'),
+                    formatSelect: document.getElementById('formatSelect'),
+                    exportBtn: document.getElementById('exportBtn'),
+                    exportBtnText: document.getElementById('exportBtnText'),
+                    stateDebug: document.getElementById('stateDebug')
+                };
+            }
+
+            // Event listeners
+            initEventListeners() {
+                // Inputs numéricos com debounce
+                this.els.sizeInput.addEventListener('input', this.debounce(() => {
+                    this.updateState('size', parseInt(this.els.sizeInput.value) || 32);
+                }, 300));
+
+                this.els.paddingInput.addEventListener('input', this.debounce(() => {
+                    this.updateState('padding', parseInt(this.els.paddingInput.value) || 0);
+                }, 300));
+
+                this.els.rotateInput.addEventListener('input', this.debounce(() => {
+                    this.updateState('rotation', parseInt(this.els.rotateInput.value) || 0);
+                }, 300));
+
+                // Checkboxes
+                this.els.flipH.addEventListener('change', (e) => {
+                    this.updateState('flipH', e.target.checked);
+                });
+
+                this.els.flipV.addEventListener('change', (e) => {
+                    this.updateState('flipV', e.target.checked);
+                });
+
+                this.els.currentColor.addEventListener('change', (e) => {
+                    this.updateState('useCurrentColor', e.target.checked);
+                });
+
+                // Color pickers
+                this.els.bgColor.addEventListener('input', (e) => {
+                    this.updateState('bgColor', e.target.value);
+                });
+
+                this.els.primaryColor.addEventListener('input', (e) => {
+                    this.updateState('primaryColor', e.target.value);
+                });
+
+                // Botões
+                this.els.resetBtn.addEventListener('click', () => this.reset());
+                this.els.closeBtn.addEventListener('click', () => this.close());
+
+                // Export
+                this.els.actionSelect.addEventListener('change', () => {
+                    const action = this.els.actionSelect.value;
+                    this.els.exportBtnText.textContent = action === 'copy' ? 'Copy' : 'Download';
+                });
+
+                this.els.exportBtn.addEventListener('click', () => this.export());
+            }
+
+            // Atualizar estado e renderizar
+            updateState(key, value) {
+                this.state[key] = value;
+                this.render();
+            }
+
+            // Reset para valores iniciais
+            reset() {
+                this.state = {
+                    ...this.state,
+                    size: 32,
+                    padding: 0,
+                    rotation: 0,
+                    flipH: false,
+                    flipV: false,
+                    bgColor: '#ffffff',
+                    primaryColor: '#1a1a1a',
+                    useCurrentColor: false
+                };
+                
+                // Atualizar inputs
+                this.els.sizeInput.value = 32;
+                this.els.paddingInput.value = 0;
+                this.els.rotateInput.value = 0;
+                this.els.flipH.checked = false;
+                this.els.flipV.checked = false;
+                this.els.bgColor.value = '#ffffff';
+                this.els.primaryColor.value = '#1a1a1a';
+                this.els.currentColor.checked = false;
+                
+                this.render();
+            }
+
+            // Renderizar preview
+            render() {
+                const { size, padding, rotation, flipH, flipV, bgColor, primaryColor, useCurrentColor, svgOriginal } = this.state;
+                
+                // Atualizar background do preview
+                this.els.preview.style.backgroundColor = bgColor;
+                
+                // Processar SVG
+                const processedSVG = this.processSVG(svgOriginal, {
+                    size,
+                    padding,
+                    rotation,
+                    flipH,
+                    flipV,
+                    primaryColor,
+                    useCurrentColor
+                });
+                
+                this.els.preview.innerHTML = processedSVG;
+                
+                // Atualizar UI de cores
+                this.els.primaryWrapper.style.opacity = useCurrentColor ? '0.5' : '1';
+                this.els.primaryWrapper.style.pointerEvents = useCurrentColor ? 'none' : 'auto';
+                
+                // Debug do estado
+                this.updateDebug();
+            }
+
+            // Processar SVG com transformações
+            processSVG(svgString, options) {
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(svgString, 'image/svg+xml');
+                const svg = doc.querySelector('svg');
+                
+                if (!svg) return svgString;
+                
+                const { size, padding, rotation, flipH, flipV, primaryColor, useCurrentColor } = options;
+                
+                // Calcular viewBox com padding
+                const originalViewBox = svg.getAttribute('viewBox') || '0 0 32 32';
+                const [vbX, vbY, vbW, vbH] = originalViewBox.split(' ').map(Number);
+                
+                const newViewBox = [
+                    vbX - padding,
+                    vbY - padding,
+                    vbW + (padding * 2),
+                    vbH + (padding * 2)
+                ].join(' ');
+                
+                svg.setAttribute('viewBox', newViewBox);
+                svg.setAttribute('width', size + 'px');
+                svg.setAttribute('height', size + 'px');
+                
+                // Aplicar transformações
+                const transforms = [];
+                const centerX = vbW / 2;
+                const centerY = vbH / 2;
+                
+                if (rotation !== 0) {
+                    transforms.push(`rotate(${rotation} ${centerX} ${centerY})`);
+                }
+                
+                if (flipH || flipV) {
+                    const scaleX = flipH ? -1 : 1;
+                    const scaleY = flipV ? -1 : 1;
+                    transforms.push(`translate(${flipH ? vbW : 0} ${flipV ? vbH : 0})`);
+                    transforms.push(`scale(${scaleX} ${scaleY})`);
+                }
+                
+                if (transforms.length > 0) {
+                    const g = svg.querySelector('g');
+                    if (g) {
+                        g.setAttribute('transform', transforms.join(' '));
+                    }
+                }
+                
+                // Aplicar cores
+                if (!useCurrentColor) {
+                    // Substituir currentColor e outras cores pelo primaryColor
+                    svg.querySelectorAll('[fill="currentColor"]').forEach(el => {
+                        el.setAttribute('fill', primaryColor);
+                    });
+                    svg.querySelectorAll('path[fill]').forEach(el => {
+                        if (el.getAttribute('fill') !== 'none') {
+                            el.setAttribute('fill', primaryColor);
+                        }
+                    });
+                }
+                
+                return new XMLSerializer().serializeToString(svg);
+            }
+
+            // Exportar/Copiar
+            async export() {
+                const action = this.els.actionSelect.value;
+                const format = this.els.formatSelect.value;
+                
+                try {
+                    const content = this.generateExport(format);
+                    
+                    if (action === 'copy') {
+                        await navigator.clipboard.writeText(content);
+                        this.showFeedback('Copiado!');
+                    } else {
+                        this.downloadFile(content, format);
+                        this.showFeedback('Download iniciado!');
+                    }
+                } catch (error) {
+                    console.error('Erro ao exportar:', error);
+                    this.showFeedback('Erro ao exportar', true);
+                }
+            }
+
+            // Gerar conteúdo para export
+            generateExport(format) {
+                const svgContent = this.els.preview.innerHTML;
+                
+                switch(format) {
+                    case 'svg':
+                        return svgContent;
+                    
+                    case 'tsx':
+                        return this.convertToTSX(svgContent);
+                    
+                    case 'react':
+                        return this.convertToReact(svgContent);
+                    
+                    case 'png':
+                        return 'PNG export requer conversão para Canvas (Fase 4)';
+                    
+                    default:
+                        return svgContent;
+                }
+            }
+
+            // Converter SVG para TSX
+            convertToTSX(svgString) {
+                let tsx = svgString
+                    .replace(/class=/g, 'className=')
+                    .replace(/fill-rule=/g, 'fillRule=')
+                    .replace(/stroke-width=/g, 'strokeWidth=')
+                    .replace(/stroke-linecap=/g, 'strokeLinecap=')
+                    .replace(/stroke-linejoin=/g, 'strokeLinejoin=')
+                    .replace(/viewbox=/gi, 'viewBox=');
+                
+                return `export const ${this.capitalizeFirstLetter(this.state.name)}Icon = () => (\n  ${tsx}\n);`;
+            }
+
+            // Converter SVG para componente React
+            convertToReact(svgString) {
+                const tsx = this.convertToTSX(svgString);
+                return `import React from 'react';\n\n${tsx}`;
+            }
+
+            // Download de arquivo
+            downloadFile(content, format) {
+                const blob = new Blob([content], { 
+                    type: format === 'svg' ? 'image/svg+xml' : 'text/plain' 
+                });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `${this.state.name}-icon.${format}`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            }
+
+            // Feedback visual
+            showFeedback(message, isError = false) {
+                const originalText = this.els.exportBtnText.textContent;
+                this.els.exportBtnText.textContent = message;
+                this.els.exportBtn.style.backgroundColor = isError ? '#ef4444' : '#10b981';
+                
+                setTimeout(() => {
+                    this.els.exportBtnText.textContent = originalText;
+                    this.els.exportBtn.style.backgroundColor = '';
+                }, 2000);
+            }
+
+            // Fechar popover
+            close() {
+                document.getElementById('iconEditor').style.opacity = '0';
+                document.getElementById('iconEditor').style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    alert('Popover fechado! (Em produção, você removeria ou esconderia o elemento)');
+                    location.reload();
+                }, 200);
+            }
+
+            // Debug do estado
+            updateDebug() {
+                if (this.els.stateDebug) {
+                    const debugState = {
+                        ...this.state,
+                        svgOriginal: '[SVG_STRING]' // Não mostrar SVG completo
+                    };
+                    this.els.stateDebug.textContent = JSON.stringify(debugState, null, 2);
+                }
+            }
+
+            // Utilidades
+            debounce(func, wait) {
+                let timeout;
+                return function executedFunction(...args) {
+                    const later = () => {
+                        clearTimeout(timeout);
+                        func(...args);
+                    };
+                    clearTimeout(timeout);
+                    timeout = setTimeout(later, wait);
+                };
+            }
+
+            capitalizeFirstLetter(string) {
+                return string.charAt(0).toUpperCase() + string.slice(1);
+            }
+        }
+
+        // 🚀 Inicializar o editor quando o DOM estiver pronto
+        document.addEventListener('DOMContentLoaded', () => {
+            window.iconEditor = new IconEditor();
+            console.log('✅ Icon Editor System inicializado!');
+        });
+    </script>
+</body>
+</html>
