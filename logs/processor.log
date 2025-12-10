@@ -4666,3 +4666,174 @@
 2025-12-06 11:09:12,589 - html_processor - DEBUG - Arquivo salvo: nucleo-popcard\styles\styles.css
 2025-12-06 11:09:13,020 - html_processor - INFO - HTML formatado em modo: beautify
 2025-12-06 11:09:13,181 - html_processor - DEBUG - Arquivo salvo: nucleo-popcard/index.html
+2025-12-09 11:14:09,065 - html_processor - INFO - Diretórios criados: nucleo-web-ui
+2025-12-09 11:14:09,140 - html_processor - INFO - === ETAPA 1: Validação ===
+2025-12-09 11:14:10,415 - html_processor - INFO - Arquivo validado: nucleo-ui.html (1.36MB)
+2025-12-09 11:14:10,519 - html_processor - INFO - === ETAPA 2: Carregamento ===
+2025-12-09 11:14:11,534 - html_processor - INFO - === ETAPA 3: Limpeza ===
+2025-12-09 11:14:12,018 - html_processor - INFO - HTML limpo e normalizado
+2025-12-09 11:14:12,131 - html_processor - INFO - Conversão semântica: 307 tags convertidas
+2025-12-09 11:14:12,290 - html_processor - INFO - Head limpo e otimizado
+2025-12-09 11:14:12,457 - html_processor - INFO - === ETAPA 4: Extração de Recursos ===
+2025-12-09 11:14:12,689 - html_processor - INFO - CSS extraído: 21 regras
+2025-12-09 11:14:12,741 - html_processor - DEBUG - Arquivo salvo: nucleo-web-ui\images\css_img_4095990398827676884.png
+2025-12-09 11:14:12,742 - html_processor - DEBUG - Imagem CSS extraída: css_img_4095990398827676884.png
+2025-12-09 11:14:12,746 - html_processor - DEBUG - Arquivo salvo: nucleo-web-ui\images\css_img_-1375532765605141991.gif
+2025-12-09 11:14:12,746 - html_processor - DEBUG - Imagem CSS extraída: css_img_-1375532765605141991.gif
+2025-12-09 11:14:12,765 - html_processor - INFO - Imagens processadas: 0
+2025-12-09 11:14:12,831 - html_processor - INFO - === ETAPA 5: Otimização ===
+2025-12-09 11:14:17,386 - html_processor - INFO - CSS otimizado e minificado
+2025-12-09 11:14:17,388 - html_processor - INFO - === ETAPA 6: Geração de Saída ===
+2025-12-09 11:14:17,432 - html_processor - DEBUG - Arquivo salvo: nucleo-web-ui\styles\styles.css
+2025-12-09 11:14:18,491 - html_processor - INFO - HTML formatado em modo: beautify
+2025-12-09 11:14:18,502 - html_processor - DEBUG - Arquivo salvo: nucleo-web-ui/index.html
+2025-12-10 09:45:11,352 - html_processor - INFO - Diretórios criados: appdraww
+2025-12-10 09:45:11,352 - html_processor - INFO - === ETAPA 1: Validação ===
+2025-12-10 09:45:11,505 - html_processor - INFO - Arquivo validado: Appdrawn.html (3.56MB)
+2025-12-10 09:45:11,505 - html_processor - INFO - === ETAPA 2: Carregamento ===
+2025-12-10 09:45:11,843 - html_processor - INFO - === ETAPA 3: Limpeza ===
+2025-12-10 09:45:11,894 - html_processor - INFO - HTML limpo e normalizado
+2025-12-10 09:45:11,894 - html_processor - INFO - Conversão semântica: 29 tags convertidas
+2025-12-10 09:45:11,912 - html_processor - INFO - Head limpo e otimizado
+2025-12-10 09:45:11,914 - html_processor - INFO - === ETAPA 4: Extração de Recursos ===
+2025-12-10 09:45:11,960 - html_processor - INFO - CSS extraído: 15 regras
+2025-12-10 09:45:12,020 - html_processor - DEBUG - Arquivo salvo: appdraww\images\css_img_-8662857200662715680.png
+2025-12-10 09:45:12,020 - html_processor - DEBUG - Imagem CSS extraída: css_img_-8662857200662715680.png
+2025-12-10 09:45:12,100 - html_processor - DEBUG - Arquivo salvo: appdraww\images\css_img_-4663245008103775693.gif
+2025-12-10 09:45:12,100 - html_processor - DEBUG - Imagem CSS extraída: css_img_-4663245008103775693.gif
+2025-12-10 09:45:12,114 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_1005327896229540955.avif
+2025-12-10 09:45:12,117 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_3086176777841918232.avif
+2025-12-10 09:45:12,119 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_-3935896409901426919.avif
+2025-12-10 09:45:12,138 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_6097098258233053527.avif
+2025-12-10 09:45:12,150 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_-6093888733026472660.avif
+2025-12-10 09:45:12,192 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_1895791637831622446.png
+2025-12-10 09:45:12,208 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_8014738919807023084.png
+2025-12-10 09:45:12,211 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_6202529961469775934.png
+2025-12-10 09:45:12,213 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_-3185978394415039709.png
+2025-12-10 09:45:12,215 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_2078916360291034846.png
+2025-12-10 09:45:12,216 - html_processor - WARNING - Erro ao decodificar base64: Invalid base64-encoded string: number of data characters (3381) cannot be 1 more than a multiple of 4
+2025-12-10 09:45:12,228 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_4200154973734599321.png
+2025-12-10 09:45:12,231 - html_processor - WARNING - Erro ao decodificar base64: Invalid base64-encoded string: number of data characters (22165) cannot be 1 more than a multiple of 4
+2025-12-10 09:45:12,236 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_9187214232285952976.png
+2025-12-10 09:45:12,244 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_2688929232690851675.png
+2025-12-10 09:45:12,265 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_-3369599231544098711.png
+2025-12-10 09:45:12,275 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_237172831358707890.png
+2025-12-10 09:45:12,275 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_6372506575393893770.png
+2025-12-10 09:45:12,275 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_6372506575393893770.png
+2025-12-10 09:45:12,291 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_-1253685929905373997.png
+2025-12-10 09:45:12,291 - html_processor - WARNING - Erro ao decodificar base64: Invalid base64-encoded string: number of data characters (13521) cannot be 1 more than a multiple of 4
+2025-12-10 09:45:12,291 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_-2416675404939478348.png
+2025-12-10 09:45:12,291 - html_processor - WARNING - Erro ao decodificar base64: Invalid base64-encoded string: number of data characters (4353) cannot be 1 more than a multiple of 4
+2025-12-10 09:45:12,291 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_4165875375364303173.png
+2025-12-10 09:45:12,310 - html_processor - WARNING - Erro ao decodificar base64: Invalid base64-encoded string: number of data characters (3445) cannot be 1 more than a multiple of 4
+2025-12-10 09:45:12,322 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_-2020388988239638370.avif
+2025-12-10 09:45:12,414 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_517151093741427221.png
+2025-12-10 09:45:12,415 - html_processor - WARNING - Erro ao decodificar base64: Invalid base64-encoded string: number of data characters (1257) cannot be 1 more than a multiple of 4
+2025-12-10 09:45:12,470 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_1611726477432848555.png
+2025-12-10 09:45:12,554 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_-7377570417828533161.avif
+2025-12-10 09:45:12,557 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_-3702158033440425111.avif
+2025-12-10 09:45:12,557 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_1803635185253933170.png
+2025-12-10 09:45:12,557 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_-1338143385064401130.png
+2025-12-10 09:45:12,557 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_3459145352125624183.avif
+2025-12-10 09:45:12,557 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_280145455726803123.avif
+2025-12-10 09:45:12,557 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_237172831358707890.png
+2025-12-10 09:45:12,557 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_748226267247898550.avif
+2025-12-10 09:45:12,573 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_1332272657032484968.avif
+2025-12-10 09:45:12,573 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_353795697560835465.png
+2025-12-10 09:45:12,573 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_-4731160148439329737.avif
+2025-12-10 09:45:12,573 - html_processor - WARNING - Erro ao decodificar base64: Invalid base64-encoded string: number of data characters (3945) cannot be 1 more than a multiple of 4
+2025-12-10 09:45:12,640 - html_processor - WARNING - Erro ao decodificar base64: Invalid base64-encoded string: number of data characters (3945) cannot be 1 more than a multiple of 4
+2025-12-10 09:45:12,670 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_-6102666555901839841.avif
+2025-12-10 09:45:12,691 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_7969919465617432267.avif
+2025-12-10 09:45:12,691 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_8540548004726320614.avif
+2025-12-10 09:45:12,691 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_5036855232352025891.avif
+2025-12-10 09:45:12,691 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_-4143063564866251863.avif
+2025-12-10 09:45:12,691 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_-5733385041660749374.avif
+2025-12-10 09:45:12,691 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_-1413774594766704213.avif
+2025-12-10 09:45:12,712 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_2415975820283972743.png
+2025-12-10 09:45:12,714 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_2415975820283972743.png
+2025-12-10 09:45:12,716 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_2415975820283972743.png
+2025-12-10 09:45:12,717 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_2415975820283972743.png
+2025-12-10 09:45:12,719 - html_processor - DEBUG - Arquivo salvo: appdraww\images\img_2415975820283972743.png
+2025-12-10 09:45:12,719 - html_processor - INFO - Imagens processadas: 46
+2025-12-10 09:45:12,874 - html_processor - INFO - === ETAPA 5: Otimização ===
+2025-12-10 09:48:29,406 - html_processor - INFO - CSS otimizado e minificado
+2025-12-10 09:48:29,406 - html_processor - INFO - === ETAPA 6: Geração de Saída ===
+2025-12-10 09:48:29,437 - html_processor - DEBUG - Arquivo salvo: appdraww\styles\styles.css
+2025-12-10 09:48:29,578 - html_processor - INFO - HTML formatado em modo: beautify
+2025-12-10 09:48:29,578 - html_processor - DEBUG - Arquivo salvo: appdraww/index.html
+2025-12-10 10:37:00,052 - html_processor - INFO - Diretórios criados: appdrawn2
+2025-12-10 10:37:00,657 - html_processor - INFO - === ETAPA 1: Validação ===
+2025-12-10 10:37:01,823 - html_processor - INFO - Arquivo validado: Appdrawn2.html (3.56MB)
+2025-12-10 10:37:02,154 - html_processor - INFO - === ETAPA 2: Carregamento ===
+2025-12-10 10:37:08,689 - html_processor - INFO - === ETAPA 3: Limpeza ===
+2025-12-10 10:37:08,979 - html_processor - INFO - HTML limpo e normalizado
+2025-12-10 10:37:09,164 - html_processor - INFO - Conversão semântica: 28 tags convertidas
+2025-12-10 10:37:09,237 - html_processor - INFO - Head limpo e otimizado
+2025-12-10 10:37:09,334 - html_processor - INFO - === ETAPA 4: Extração de Recursos ===
+2025-12-10 10:37:09,496 - html_processor - INFO - CSS extraído: 14 regras
+2025-12-10 10:37:09,719 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\css_img_2631151723369096710.png
+2025-12-10 10:37:09,728 - html_processor - DEBUG - Imagem CSS extraída: css_img_2631151723369096710.png
+2025-12-10 10:37:09,735 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\css_img_-6867803887691378877.gif
+2025-12-10 10:37:09,736 - html_processor - DEBUG - Imagem CSS extraída: css_img_-6867803887691378877.gif
+2025-12-10 10:37:09,843 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_-4608901145080598275.avif
+2025-12-10 10:37:09,846 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_-7210986670630055270.avif
+2025-12-10 10:37:09,848 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_-814597269014008414.avif
+2025-12-10 10:37:09,852 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_-8976476604792477224.avif
+2025-12-10 10:37:09,864 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_8429436605432936483.avif
+2025-12-10 10:37:09,866 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_8943232725424103744.png
+2025-12-10 10:37:09,868 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_-6114730885525990730.png
+2025-12-10 10:37:09,870 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_4460500658111058841.png
+2025-12-10 10:37:09,908 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_-3994236312293911271.png
+2025-12-10 10:37:09,911 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_1970588825684650938.png
+2025-12-10 10:37:09,912 - html_processor - WARNING - Erro ao decodificar base64: Invalid base64-encoded string: number of data characters (3381) cannot be 1 more than a multiple of 4
+2025-12-10 10:37:09,968 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_4479609240949327774.png
+2025-12-10 10:37:09,968 - html_processor - WARNING - Erro ao decodificar base64: Invalid base64-encoded string: number of data characters (22165) cannot be 1 more than a multiple of 4
+2025-12-10 10:37:09,977 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_-1565702358236456917.png
+2025-12-10 10:37:09,980 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_-2193484134518023819.png
+2025-12-10 10:37:10,288 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_6912724180480696121.png
+2025-12-10 10:37:10,295 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_4865852039218082492.png
+2025-12-10 10:37:10,297 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_-385222851508825941.png
+2025-12-10 10:37:10,301 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_-385222851508825941.png
+2025-12-10 10:37:10,304 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_-4840820319351467387.png
+2025-12-10 10:37:10,305 - html_processor - WARNING - Erro ao decodificar base64: Invalid base64-encoded string: number of data characters (13521) cannot be 1 more than a multiple of 4
+2025-12-10 10:37:10,320 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_-8580060708320801938.png
+2025-12-10 10:37:10,321 - html_processor - WARNING - Erro ao decodificar base64: Invalid base64-encoded string: number of data characters (4353) cannot be 1 more than a multiple of 4
+2025-12-10 10:37:10,328 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_-7585138171381212149.png
+2025-12-10 10:37:10,328 - html_processor - WARNING - Erro ao decodificar base64: Invalid base64-encoded string: number of data characters (3445) cannot be 1 more than a multiple of 4
+2025-12-10 10:37:10,336 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_-415514401179996951.avif
+2025-12-10 10:37:10,339 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_3635052066721972322.png
+2025-12-10 10:37:10,340 - html_processor - WARNING - Erro ao decodificar base64: Invalid base64-encoded string: number of data characters (1257) cannot be 1 more than a multiple of 4
+2025-12-10 10:37:10,439 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_4235674729820286210.png
+2025-12-10 10:37:10,488 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_2773728119875868645.avif
+2025-12-10 10:37:10,493 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_-1341373129883342622.avif
+2025-12-10 10:37:10,495 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_-4737234463828764924.png
+2025-12-10 10:37:10,500 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_3129905252672246035.png
+2025-12-10 10:37:10,576 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_5201966122490890989.avif
+2025-12-10 10:37:10,643 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_-4463673257990827896.avif
+2025-12-10 10:37:10,646 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_4865852039218082492.png
+2025-12-10 10:37:10,649 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_-592093124205408000.avif
+2025-12-10 10:37:10,652 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_5745433482363941314.avif
+2025-12-10 10:37:10,654 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_-843747316479731011.png
+2025-12-10 10:37:10,657 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_-3269824722489004021.avif
+2025-12-10 10:37:10,658 - html_processor - WARNING - Erro ao decodificar base64: Invalid base64-encoded string: number of data characters (3945) cannot be 1 more than a multiple of 4
+2025-12-10 10:37:10,660 - html_processor - WARNING - Erro ao decodificar base64: Invalid base64-encoded string: number of data characters (3945) cannot be 1 more than a multiple of 4
+2025-12-10 10:37:10,821 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_-2267701864727824525.avif
+2025-12-10 10:37:10,826 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_6573419612033493502.avif
+2025-12-10 10:37:10,828 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_-1214895892932943331.avif
+2025-12-10 10:37:10,830 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_2708111118806945493.avif
+2025-12-10 10:37:10,832 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_1021265650877268916.avif
+2025-12-10 10:37:10,844 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_-327917715665797557.avif
+2025-12-10 10:37:10,853 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_409410547351806046.avif
+2025-12-10 10:37:11,061 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_7296878520578292603.png
+2025-12-10 10:37:11,063 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_7296878520578292603.png
+2025-12-10 10:37:11,428 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_7296878520578292603.png
+2025-12-10 10:37:11,670 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_7296878520578292603.png
+2025-12-10 10:37:11,671 - html_processor - DEBUG - Arquivo salvo: appdrawn2\images\img_7296878520578292603.png
+2025-12-10 10:37:11,672 - html_processor - INFO - Imagens processadas: 46
+2025-12-10 10:37:11,674 - html_processor - INFO - === ETAPA 5: Otimização ===
+2025-12-10 10:41:16,993 - html_processor - INFO - CSS otimizado e minificado
+2025-12-10 10:41:16,993 - html_processor - INFO - === ETAPA 6: Geração de Saída ===
+2025-12-10 10:41:17,009 - html_processor - DEBUG - Arquivo salvo: appdrawn2\styles\styles.css
+2025-12-10 10:41:17,112 - html_processor - INFO - HTML formatado em modo: beautify
+2025-12-10 10:41:17,137 - html_processor - DEBUG - Arquivo salvo: appdrawn2/index.html

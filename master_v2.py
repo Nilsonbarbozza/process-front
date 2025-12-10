@@ -33,7 +33,7 @@ CONFIG = {
     'MAX_FILE_SIZE_MB': int(os.getenv('MAX_FILE_SIZE_MB', 10)),
     'MAX_IMAGE_SIZE_MB': int(os.getenv('MAX_IMAGE_SIZE_MB', 5)),
     'REQUEST_TIMEOUT': int(os.getenv('REQUEST_TIMEOUT', 10)),
-    'OUTPUT_DIR': os.getenv('OUTPUT_DIR', 'nucleo-popcard'),
+    'OUTPUT_DIR': os.getenv('OUTPUT_DIR', 'appdrawn2'),
 }
 
 OUT_DIR = CONFIG['OUTPUT_DIR']
